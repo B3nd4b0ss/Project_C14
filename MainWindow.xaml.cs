@@ -14,6 +14,7 @@ namespace Project_C14
         public MainWindow()
         {
             InitializeComponent();
+            Code.Classes.Data.Initialize();
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
