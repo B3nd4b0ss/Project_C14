@@ -10,12 +10,7 @@ public partial class Main : Page
         InitializeComponent();
     }
 
-    private void Absloute_Calc(object sender, RoutedEventArgs e)
-    {
-        throw new System.NotImplementedException();
-    }
-
-    private void Relative_Calc(object sender, RoutedEventArgs e)
+    private void Calculate(object sender, RoutedEventArgs e)
     {
         throw new System.NotImplementedException();
     }

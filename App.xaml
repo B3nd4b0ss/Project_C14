@@ -48,7 +48,7 @@
             <Setter Property="Foreground" Value="#9ea4ad"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
-            <Setter Property="Padding" Value="40 15 15 15"/>
+            <Setter Property="Padding" Value="38 15 15 15"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -72,10 +72,10 @@
         
         <Style x:Key="BerchnenText" TargetType="TextBox">
             <Setter Property="Background" Value="DarkGreen"/>
-            <Setter Property="Foreground" Value="#9ea4ad"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
-            <Setter Property="Padding" Value="40 15 15 15"/>
+            <Setter Property="Padding" Value="15 15 15 15"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
@@ -192,7 +192,7 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Background" Value="#61E693"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
                 <DataTrigger Binding="{Binding ElementName=menubutton, Path=IsActive}" Value="True">

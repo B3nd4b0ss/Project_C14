@@ -6,8 +6,11 @@
       xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
       xmlns:local="clr-namespace:Project_C14"
       mc:Ignorable="d"
-      
       Title="Main" Height="500" Width="1200">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"></BooleanToVisibilityConverter>
+    </Page.Resources>
     <Grid>
         <Border Style="{StaticResource MainBorder}" Margin="30 0">
                 <Grid Grid.Row="2" Grid.Column="1">
@@ -22,7 +25,7 @@
                 
 
                     <StackPanel  Grid.ColumnSpan="2" VerticalAlignment="Top">
-                        <Label VerticalAlignment="Top" HorizontalAlignment="Center" Content="Bitte Geben den Referenzwert wie folgt ein:" Foreground="White"/>
+                        <Label VerticalAlignment="Top" HorizontalAlignment="Center" Content="Bitte Geben Sie die Daten wie folgt ein:" Foreground="White"/>
                         <Label HorizontalAlignment="Center" Content="10e-12" Foreground="White"/>
                     </StackPanel>
                     
@@ -33,27 +36,31 @@
                            
                            <Grid Margin="0 0 150 20" HorizontalAlignment="Center">
                                <Label Content="Bitte geben Sie die Probendaten ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin="0 0 300 75"/>
-                               <TextBlock Margin="15 0 150 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
-                                          IsHitTestVisible="False"
-                                          Visibility="Hidden"/>
-                               <TextBox Style="{StaticResource BerchnenText}" Margin="0 0 300 0"/>  
+                               <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                                          IsHitTestVisible="False" Text="10e-12"
+                                          Visibility="{Binding ElementName=Box, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                               <TextBox x:Name="Box" Style="{StaticResource BerchnenText}" Margin="0 0 300 0"/>  
                                <Label Content="Bitte geben Sie den Referenzwert ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin=" 0 0 -150 75" HorizontalAlignment="Right"/>
-                                <TextBlock Margin="15 0 150 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
-                                           IsHitTestVisible="False"
-                                           Visibility="Hidden"/>
-                                <TextBox Style="{StaticResource BerchnenText}" Margin="450 0 -150 0"/>
+                                <TextBlock Margin="465 0 -150 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                                           IsHitTestVisible="False" Text="10e-12"
+                                           Visibility="{Binding ElementName=TextBox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                                <TextBox x:Name="TextBox" Style="{StaticResource BerchnenText}" Margin="450 0 -150 0"/>
                             </Grid>
-                            <Button  Content="Berechnen" Height="50" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}" Click="Relative_Calc"/>
+                            <Button Margin="0 100 0 -50" Padding="0 50 0 0" Content="Berechnen" Height="50" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}" Click="Calculate"/>
                         </StackPanel>
                         <StackPanel VerticalAlignment="Bottom" >
-                            <Grid HorizontalAlignment="Right" Margin="0 0 100 0">  
-                                <Label Content="Die Probe ist so alt:" Foreground="#9ea4ad" VerticalAlignment="Center" Margin="0 0 0 75"/>
+                            <Grid HorizontalAlignment="Center" Margin="0 0 100 0">  
+                                <Label Content="Die Probe ist so alt:" Foreground="#9ea4ad" VerticalAlignment="Center" Margin="100 0 0 75"/>
                                 <Label Foreground="#9ea4ad" Margin="0 30 20 30" x:Name="AbsolutOut"/>
                             </Grid>
                         </StackPanel>
                     </Grid>
                     <Grid Grid.Row="1" Grid.ColumnSpan="2">
-
+                        <TextBlock Foreground="White" VerticalAlignment="Bottom" FontSize="15" HorizontalAlignment="Center"  TextAlignment="Center" Text="In den beiden Eingabefeldern oberhalb dieses Textes können Sie die absoluten C14 Werte oder die C14 zu C12 Verhältnisse eingeben.&#10;
+                        Was davon Sie eingeben ist egal. Beachten Sie jedoch dass Sie für eine korrekte Berechnung des Alters in beiden Feldern&#10;
+                        die absolute Menge oder die Verhältnisse eingeben. Ansonsten führt dies zu unbrauchbaren Ergebnissen&#10;da sich die Werte in ihrer Art stark unterscheiden.">
+                            
+                        </TextBlock>
                     </Grid>
                 </Grid>
             </Border>

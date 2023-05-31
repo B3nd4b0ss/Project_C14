@@ -12,7 +12,7 @@
         Background="Transparent"
         >
     <Window.Resources>
-        <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
+        <BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
     </Window.Resources>
     <Border BorderBrush="#182c25"
                 CornerRadius="8,8,0,8"
@@ -69,7 +69,7 @@
                 <Grid>
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                    IsHitTestVisible="False" Text="Search here..."
-                                   Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
+                                   Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource BoolToVisibility}}"/>
                     <TextBox x:Name="textbox" Style="{StaticResource searchTextBox}" Margin="0 0 15 0"/>
                     <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                 </Grid>
