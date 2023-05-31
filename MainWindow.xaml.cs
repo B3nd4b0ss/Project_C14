@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using MahApps.Metro.IconPacks;
 using Project_C14.UserControls;
 using System.Windows;
@@ -17,7 +18,7 @@ namespace Project_C14
         {
             InitializeComponent();
             Code.Classes.Data.Initialize();
-            Frame.Source = new Uri("Pages/Main.xaml", UriKind.Relative);
+            MainFrame.Source = new Uri("Pages/Main.xaml", UriKind.Relative);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -27,16 +28,7 @@ namespace Project_C14
                 this.DragMove();
             }
         }
-
-        private void InfoCard_Loaded(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void Menubutton_Loaded(object sender, RoutedEventArgs e)
-        {
-            
-        }
+        
 
         private void OnClick_Power(object sender, RoutedEventArgs e)
         {
@@ -45,45 +37,36 @@ namespace Project_C14
 
         private void OnClick_Home(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Main();
+            MainFrame.Content = new Main();
         }
         
 
         private void OnClick_Download(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Download();
+            MainFrame.Content = new Download();
         }
 
         private void OnClick_Library(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Library();
+            MainFrame.Content = new Library();
         }
         
         
 
         private void Erweiterung_OnClick(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Erweiterung();
+            MainFrame.Content = new Erweiterung();
         }
-
-        private void Absloute_Calc(object sender, RoutedEventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        private void Relative_Calc(object sender, RoutedEventArgs e)
-        {
-            throw new System.NotImplementedException();
-        }
+        
 
         private void Account_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Account();
+            MainFrame.Content = new Account();
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Content = new Settings();
+            MainFrame.Content = new Settings();
         }
     }
 }

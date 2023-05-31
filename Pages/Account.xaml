@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="Account" Height="500" Width="1200">
     <Grid>
-        <Frame x:Name="AccountFrame" NavigationUIVisibility="Hidden" />
+        <Frame x:Name="AccountFrame" NavigationUIVisibility="Hidden"/>
         <Border Style="{StaticResource MainBorder}" Margin="30 0">
             <Grid>
                 <Grid.RowDefinitions>

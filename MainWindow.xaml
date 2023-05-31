@@ -88,9 +88,8 @@
                 </Border>
             </Grid>
             
-            <Frame Grid.Row="2" Grid.Column="1" x:Name="Frame" NavigationUIVisibility="Hidden" Source="Pages/Main.xaml">
-                 
-            </Frame>
+            <Frame Grid.Row="2" Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" Source="Pages/Main.xaml"/>
+            <Frame Grid.Row="2" Grid.Column="1" x:Name="AccountFrame" NavigationUIVisibility="Hidden"/>
             
 
 
