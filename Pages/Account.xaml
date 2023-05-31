@@ -8,5 +8,8 @@
       Title="Library" Height="500" Width="1200">
     <Grid>
         <Border Style="{StaticResource MainBorder}" Margin="30 0"></Border>
+        <StackPanel>
+            <Frame x:Name="AccountFrame" NavigationUIVisibility="Hidden" />
+        </StackPanel>
     </Grid>
 </Page>

@@ -15,14 +15,14 @@ public struct Probe
 
     // Inputs
     public string ProbeName { get; }
-    public double? AtmosphericC14InAtomsPerGramOfCarbon { get; set; } // Atmospheric C14 concentration in atoms per gram of carbon
-    public double? SampleC14InAtomsPerGramOfCarbon { get; set; } // C14 concentration in sample in atoms per gram of carbon
-    public double? SampleCarbonInGrams { get; set; } // Total carbon in sample in grams
-    public double? SampleWeightInGrams { get; set; } // Sample weight in grams
-    public double? SampleHeightInMeters { get; set; } // Height above sea level in meters
-    public double? GeomagneticFieldStrengthInMicroteslas { get; set; } // Geomagnetic field strength in microteslas
-    public double? TemperatureInKelvin { get; set; } // Temperature in Kelvin
-    public double? PressureInPascal { get; set; } // Pressure in Pascals
+    public double AtmosphericC14InAtomsPerGramOfCarbon { get; set; } // Atmospheric C14 concentration in atoms per gram of carbon
+    public double SampleC14InAtomsPerGramOfCarbon { get; set; } // C14 concentration in sample in atoms per gram of carbon
+    public double SampleCarbonInGrams { get; set; } // Total carbon in sample in grams
+    public double SampleWeightInGrams { get; set; } // Sample weight in grams
+    public double SampleHeightInMeters { get; set; } // Height above sea level in meters
+    public double GeomagneticFieldStrengthInMicroteslas { get; set; } // Geomagnetic field strength in microteslas
+    public double TemperatureInKelvin { get; set; } // Temperature in Kelvin
+    public double PressureInPascal { get; set; } // Pressure in Pascals
 
     /*
      // Constants
