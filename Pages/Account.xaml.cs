@@ -9,7 +9,16 @@ public partial class Account : Page
     
     public Account()
     {
+        InitializeComponent();
 
+        if (_isLoggedIn)
+        {
+            AccountFrame.Content = new AccountManageFace();
+        }
+        else
+        {
+            AccountFrame.Content = new LoginFace();
+        }
     }
     
     
