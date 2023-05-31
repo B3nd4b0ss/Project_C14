@@ -1,4 +1,5 @@
-﻿using MahApps.Metro.IconPacks;
+﻿using System;
+using MahApps.Metro.IconPacks;
 using Project_C14.UserControls;
 using System.Windows;
 using System.Windows.Input;
@@ -16,6 +17,7 @@ namespace Project_C14
         {
             InitializeComponent();
             Code.Classes.Data.Initialize();
+            Frame.Source = new Uri("Pages/Main.xaml", UriKind.Relative);
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
