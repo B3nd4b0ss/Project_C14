@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Project_C14.Pages.AccountSubPages"
       mc:Ignorable="d"
-      Title="AccountManageFace" Height="450" Width="800">
+      Title="AccountManageFace" Height="500" Width="1200">
     <Grid>
         
     </Grid>

@@ -5,8 +5,32 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Project_C14.Pages.AccountSubPages"
       mc:Ignorable="d"
-      Title="LoginFace" Height="450" Width="800">
+      Title="LoginFace" Height="500" Width="1200">
     <Grid>
-        
+        <Border Style="{StaticResource MainBorder}" Margin="30 0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Label Content="Login" Foreground="White" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center"></Label>
+                    
+                <Grid Grid.Row="1" >
+                    <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="Benutzername"
+                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
+                    <TextBox Style="{StaticResource AccountTextBox}"/>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="Passwort"
+                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
+                    <TextBox Style="{StaticResource AccountTextBox}"/>
+                </Grid>
+                <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{StaticResource CalculateButton}" ></Button>
+            </Grid>
+        </Border>
     </Grid>
 </Page>
