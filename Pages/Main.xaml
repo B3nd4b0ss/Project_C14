@@ -16,15 +16,18 @@
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="300"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
                 
 
-
+                    <StackPanel  Grid.ColumnSpan="2" VerticalAlignment="Top">
+                        <Label VerticalAlignment="Top" HorizontalAlignment="Center" Content="Bitte Geben den Referenzwert wie folgt ein:" Foreground="White"/>
+                        <Label HorizontalAlignment="Center" Content="10e-12" Foreground="White"/>
+                    </StackPanel>
                     
                     <Grid>
-                        <StackPanel VerticalAlignment="Bottom" >
+                       <StackPanel VerticalAlignment="Bottom" >
                             <Grid Margin="15 0 15 20">  
                                 <Label Content="Bitte geben Sie den Referenzwert ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin="0 0 0 75"/>
                                 <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
@@ -40,9 +43,6 @@
                                 <Label Foreground="#9ea4ad" Margin="0 30 20 30" x:Name="AbsolutOut"/>
                             </Grid>
                         </StackPanel>
-                    </Grid>
-                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
-
                     </Grid>
                     <Grid Grid.Column="1">
                         <StackPanel VerticalAlignment="Bottom" >
@@ -62,7 +62,9 @@
                             </Grid>
                         </StackPanel>
                     </Grid>
+                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
 
+                    </Grid>
                 </Grid>
             </Border>
     </Grid>
