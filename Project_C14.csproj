@@ -167,23 +167,40 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Account.xaml.cs">
-      <DependentUpon>Account.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Code\Classes\Calculate.cs" />
     <Compile Include="Code\Classes\Data.cs" />
     <Compile Include="Code\Classes\Login.cs" />
     <Compile Include="Code\Structs\Probe.cs" />
+    <Compile Include="Pages\Account.xaml.cs">
+      <DependentUpon>Account.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Download.xaml.cs">
+      <DependentUpon>Download.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Erweiterung.xaml.cs">
+      <DependentUpon>Erweiterung.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Library.xaml.cs">
+      <DependentUpon>Library.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\InfoCard.xaml.cs">
       <DependentUpon>InfoCard.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserControls\Menubutton.xaml.cs">
       <DependentUpon>Menubutton.xaml</DependentUpon>
     </Compile>
-    <Page Include="Account.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Page Include="Pages\Account.xaml" />
+    <Page Include="Pages\Download.xaml" />
+    <Page Include="Pages\Erweiterung.xaml" />
+    <Page Include="Pages\Library.xaml" />
+    <Page Include="Pages\Main.xaml" />
+    <Page Include="Pages\Settings.xaml" />
     <Page Include="Themes\Dark.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

@@ -42,47 +42,45 @@ namespace Project_C14
 
         private void OnClick_Home(object sender, RoutedEventArgs e)
         {
-
+            Frame.Content = new Main();
         }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OnClick_Account(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void OnClick_Settings(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
 
         private void OnClick_Download(object sender, RoutedEventArgs e)
         {
-
+            Frame.Content = new Download();
         }
 
         private void OnClick_Library(object sender, RoutedEventArgs e)
         {
+            Frame.Content = new Library();
+        }
+        
+        
 
+        private void Erweiterung_OnClick(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = new Erweiterung();
         }
 
-        private void InfoCard_Loaded_1(object sender, RoutedEventArgs e)
+        private void Absloute_Calc(object sender, RoutedEventArgs e)
         {
-
+            throw new System.NotImplementedException();
         }
 
-        private void Button_Click_UngefährBerechnen(object sender, RoutedEventArgs e)
+        private void Relative_Calc(object sender, RoutedEventArgs e)
         {
-
+            throw new System.NotImplementedException();
         }
 
-        private void Button_Click_GenauBerechnen(object sender, RoutedEventArgs e)
+        private void Account_Click(object sender, RoutedEventArgs e)
         {
+            Frame.Content = new Account();
+        }
 
+        private void Settings_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = new Settings();
         }
     }
 }

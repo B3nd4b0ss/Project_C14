@@ -7,15 +7,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="" />
+    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="d">
+      <change afterPath="$PROJECT_DIR$/Pages/Account.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Account.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Download.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Library.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Library.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Main.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Main.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Settings.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Pages/Settings.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Download.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Account.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2QYKGzz6NHTiF3tVRfS2Xd6vLzY" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -72,13 +93,25 @@
       <workItem from="1685524986485" duration="88000" />
       <workItem from="1685531450285" duration="11000" />
       <workItem from="1685531478521" duration="112000" />
+      <workItem from="1685531606311" duration="3195000" />
     </task>
+    <task id="LOCAL-00001" summary="d">
+      <created>1685531697459</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685531697459</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="d" />
+    <option name="LAST_COMMIT_MESSAGE" value="d" />
   </component>
 </project>
