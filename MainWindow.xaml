@@ -107,7 +107,7 @@
                                    IsHitTestVisible="False"
                                    Visibility="Hidden"/>
                         <TextBox Style="{StaticResource searchTextBox}" Margin="0,0,300,0"/>
-                        <Button Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_Absolut" Style="{StaticResource CalculateButton}"/>
+                        <Button Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource CalculateButton}"/>
 
                     </Grid>
                     <Grid Grid.Row="1" Grid.ColumnSpan="2">
@@ -119,7 +119,7 @@
                                    IsHitTestVisible="False"
                                    Visibility="Hidden"/>
                         <TextBox Style="{StaticResource searchTextBox}" Margin="0 0 300 0"/>
-                        <Button  Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_Relativ" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}"/>
+                        <Button  Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}"/>
                     </Grid>
 
                 </Grid>
