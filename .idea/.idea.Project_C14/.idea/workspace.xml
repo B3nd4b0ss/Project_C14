@@ -7,20 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="d">
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Classes/Calculate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Calculate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Structs/Probe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Structs/Probe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Account.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Account.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Account.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Account.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
-    </list>
+    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="d" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
