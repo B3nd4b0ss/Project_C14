@@ -1,0 +1,132 @@
+﻿<Window x:Class="Project_C14.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:uc="clr-namespace:Project_C14.UserControls"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        Title="MainWindow" 
+        Height="700" 
+        Width="1300"
+        ResizeMode="NoResize"
+        AllowsTransparency="True"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
+    </Window.Resources>
+    <Border BorderBrush="#182c25"
+                CornerRadius="8,8,0,8"
+                BorderThickness="5"
+                Background="#1A412E">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Border>
+                
+            </Border>
+
+            <!-- Left Menu -->
+            <Border Grid.RowSpan="3" Background="#125C13" CornerRadius="5,0,0,5" MouseDown="Border_MouseDown">
+                
+                <Grid>
+                    <StackPanel VerticalAlignment="Top" Margin="0 105 0 0">
+                        
+                        <!-- Menu Buttons -->
+                        <Button Style="{StaticResource menuButton}" Click="OnClick_Home">
+                            <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                        </Button>
+                        <Button Style="{StaticResource menuButton}" Click="OnClick_Library">
+                            <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource menuButtonIcon}"/>
+                        </Button>
+                        <Button Style="{StaticResource menuButton}" Click="OnClick_Download">
+                            <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" />
+                        </Button>
+
+                    </StackPanel>
+                    <Button Style="{StaticResource menuButton}" Click="OnClick_Power" VerticalAlignment="Bottom" Margin="0 30">
+                        <Icon:PackIconMaterial Kind="Power" Style="{StaticResource menuButtonIcon}"/>
+                    </Button>
+
+                </Grid>
+
+            </Border>
+
+            <!-- Top Menu -->
+            <Grid Grid.Column="1" Margin="30">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+                <!-- Search Textbox-->
+                <Grid>
+                    <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                                   IsHitTestVisible="False" Text="Search here..."
+                                   Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
+                    <TextBox x:Name="textbox" Style="{StaticResource searchTextBox}"/>
+                    <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                </Grid>
+
+                <!-- Buttons -->
+                <StackPanel Orientation="Horizontal" Grid.Column="1" Margin="20 0 0 0">
+                    
+                    <Button Style="{StaticResource TopMenuButton}">
+                        <Icon:PackIconMaterial Kind="CogOutline" Style="{StaticResource TopMenuButtonIcon}"/>
+                    </Button>
+                    <Button Style="{StaticResource TopMenuButton}" Background="DarkGreen">
+                        <Icon:PackIconMaterial Kind="Account" Style="{StaticResource TopMenuButtonIcon}"/>
+                    </Button>
+
+                </StackPanel>
+            </Grid>
+            
+            <Border Style="{StaticResource MainBorder}" Grid.Column="1" Grid.Row="2" Margin="30 0">
+                <Grid Grid.Row="2" Grid.Column="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+
+
+                    
+                    <Grid>
+                        <Label Content="Bitte geben Sie den Referenzwert ein&#xD;&#xA; " Foreground="#9ea4ad" Margin="0,87,0,159"/>
+                        <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                                   IsHitTestVisible="False"
+                                   Visibility="Hidden"/>
+                        <TextBox Style="{StaticResource searchTextBox}" Margin="0,0,300,0"/>
+                        <Button Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_Absolut" Style="{StaticResource CalculateButton}"/>
+
+                    </Grid>
+                    <Grid Grid.Row="1" Grid.ColumnSpan="2">
+
+                    </Grid>
+                    <Grid Grid.Column="1">
+                        <Label Content="Bitte geben Sie den Referenzwert ein&#xD;&#xA; " Foreground="#9ea4ad" Margin="0,87,0,159"/>
+                        <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                                   IsHitTestVisible="False"
+                                   Visibility="Hidden"/>
+                        <TextBox Style="{StaticResource searchTextBox}" Margin="0 0 300 0"/>
+                        <Button  Content="Berechnen" Height="20" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Click="Button_Click_Relativ" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}"/>
+                    </Grid>
+
+                </Grid>
+            </Border>
+
+
+
+        </Grid>
+    </Border>
+</Window>
