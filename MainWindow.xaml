@@ -9,7 +9,8 @@
         AllowsTransparency="True"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent">
+        Background="Transparent"
+        >
     <Window.Resources>
         <BooleanToVisibilityConverter x:Key="boolToVisibility"/>
     </Window.Resources>
