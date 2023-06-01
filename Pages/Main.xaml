@@ -33,12 +33,12 @@
                               
                            
                            <Grid Margin="0 0 150 20" HorizontalAlignment="Center">
-                               <Label Content="Bitte geben Sie die Probendaten ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin="0 0 300 75"/>
+                               <Label Content="Bitte geben Sie die Probendaten ein: " Foreground="WhiteSmoke" VerticalAlignment="Center" Margin="0 0 300 75"/>
                                <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                           IsHitTestVisible="False" Text="10e-12"
                                           Visibility="{Binding ElementName=Box, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                                <TextBox x:Name="Box" Style="{DynamicResource BerchnenText}" Margin="0 0 300 0"/>  
-                               <Label Content="Bitte geben Sie den Referenzwert ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin=" 0 0 -150 75" HorizontalAlignment="Right"/>
+                               <Label Content="Bitte geben Sie den Referenzwert ein: " Foreground="WhiteSmoke" VerticalAlignment="Center" Margin=" 0 0 -150 75" HorizontalAlignment="Right"/>
                                 <TextBlock Margin="465 0 -150 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                            IsHitTestVisible="False" Text="10e-12"
                                            Visibility="{Binding ElementName=TextBox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
@@ -48,7 +48,7 @@
                         </StackPanel>
                         <StackPanel VerticalAlignment="Bottom" >
                             <Grid HorizontalAlignment="Center" Margin="0 0 100 0">  
-                                <Label Content="Die Probe ist so alt:" Foreground="#9ea4ad" VerticalAlignment="Center" Margin="100 0 0 75"/>
+                                <Label Content="Die Probe ist so alt:" Foreground="WhiteSmoke" VerticalAlignment="Center" Margin="100 0 0 75"/>
                                 <Label Foreground="#9ea4ad" Margin="0 30 20 30" x:Name="AbsolutOut"/>
                             </Grid>
                         </StackPanel>

@@ -46,8 +46,8 @@
         </Style>
 
         <Style x:Key="searchTextBox" TargetType="TextBox">
-            <Setter Property="Background" Value="#2C4F40"/>
-            <Setter Property="Foreground" Value="#9ea4ad"/>
+            <Setter Property="Background" Value="#32CD32"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="Padding" Value="38 15 15 15"/>
@@ -61,10 +61,10 @@
 
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
+                                <Setter Property="BorderBrush" Value="White" TargetName="border"/>
                             </Trigger>
                             <Trigger Property="IsKeyboardFocused" Value="True">
-                                <Setter Property="BorderBrush" Value="#d9d9d9" TargetName="border"/>
+                                <Setter Property="BorderBrush" Value="White" TargetName="border"/>
                             </Trigger>
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
@@ -156,7 +156,7 @@
         </Style>
 
         <Style x:Key="MainBorder" TargetType="Border">
-            <Setter Property="Background" Value="#2C4F40"/>
+            <Setter Property="Background" Value="#32CD32"/>
             <Setter Property="Padding" Value="20"/>
             <Setter Property="CornerRadius" Value="10"/>
         </Style>
@@ -168,7 +168,7 @@
         </Style>
 
         <Style x:Key="CalculateButton" TargetType="Button">
-            <Setter Property="Background" Value="#3E7C17"/>
+            <Setter Property="Background" Value="#54FF9F"/>
             <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Tag" Value="Hidden"/>
