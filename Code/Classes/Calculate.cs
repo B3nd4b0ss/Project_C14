@@ -22,10 +22,11 @@ public class Calculate
         double fractionModern = probeToCalc.SampleC14InAtomsPerGramOfCarbon / probeToCalc.AtmosphericC14InAtomsPerGramOfCarbon; // Fraction of modern C14
         double years = (-1 / lambda) * Math.Log(fractionModern) / Math.Log(2); // Age of sample in years
         const double deltaR = 0.13; // Correction factor for carbon reservoir age
-        double deltaC14 = (probeToCalc.SampleC14InAtomsPerGramOfCarbon / probeToCalc.AtmosphericC14InAtomsPerGramOfCarbon) / (N0 / 1000) * deltaR; // Correction factor for isotopic fractionation
+        double deltaC14 = (probeToCalc.SampleC14InAtomsPerGramOfCarbon / probeToCalc.SampleCarbonInGrams) / (N0 / 1000) * deltaR; // Correction factor for isotopic fractionation
         double correctedYears = years - deltaC14; // Age of sample corrected for isotopic fractionation
         double effectiveResult = correctedYears * pressureCorrection * temperatureCorrection;
-        
+
+        probeToCalc.EffectiveAge = effectiveResult;
         return probeToCalc;
     }
 }

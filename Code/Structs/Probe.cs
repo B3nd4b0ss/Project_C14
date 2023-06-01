@@ -23,6 +23,8 @@ public struct Probe
     public double GeomagneticFieldStrengthInMicroteslas { get; set; } // Geomagnetic field strength in microteslas
     public double TemperatureInKelvin { get; set; } // Temperature in Kelvin
     public double PressureInPascal { get; set; } // Pressure in Pascals
+    
+    public double EffectiveAge { get; set; } // Effective Age after Calculation
 
     /*
      // Constants
