@@ -6,7 +6,12 @@
       xmlns:local="clr-namespace:Project_C14.Pages"
       mc:Ignorable="d"
       Title="Account" Height="500" Width="1200">
+    <Page.Resources>
+        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+        <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"/>
+    </Page.Resources>
     <Grid>
+        
         <Frame x:Name="AccountFrame" NavigationUIVisibility="Hidden"/>
         <Border Style="{DynamicResource MainBorder}" Margin="30 0">
             <Grid>
@@ -21,17 +26,17 @@
                 <Grid Grid.Row="1" >
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                IsHitTestVisible="False" Text="Benutzername"
-                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
-                    <TextBox Style="{DynamicResource AccountTextBox}"/>
+                               Visibility="{Binding ElementName=Box, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    <TextBox x:Name="Box" Style="{DynamicResource AccountTextBox}" Margin="15 0"/> 
                 </Grid>
                 <Grid Grid.Row="2">
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                IsHitTestVisible="False" Text="Passwort"
-                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
-                    <TextBox Style="{DynamicResource AccountTextBox}"/>
+                               Visibility="{Binding ElementName=Textbox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                    <TextBox x:Name="Textbox" Style="{DynamicResource AccountTextBox}" Margin="15 0"/>
                 </Grid>
-                <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{DynamicResource CalculateButton}" ></Button>
+                <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{DynamicResource LoginButton}" ></Button>
             </Grid>
         </Border>
-    </Grid>
+        </Grid>
 </Page>

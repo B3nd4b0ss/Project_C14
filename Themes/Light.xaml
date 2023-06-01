@@ -244,11 +244,11 @@
         
         <Style x:Key="AccountTextBox" TargetType="TextBox">
             <Setter Property="Background" Value="DarkGreen"/>
-            <Setter Property="Foreground" Value="#9ea4ad"/>
+            <Setter Property="Foreground" Value="White"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="Height" Value="75"/>
-            <Setter Property="Padding" Value="40 15 15 15"/>
+            <Setter Property="Padding" Value="39 30 0 0"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
