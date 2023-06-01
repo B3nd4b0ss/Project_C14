@@ -16,7 +16,7 @@
                 <TextBlock x:Name="Text5"></TextBlock>
                 <TextBlock x:Name="Text6"></TextBlock>
                 <TextBlock x:Name="Text7"></TextBlock>
-                <Button x:Name="Berechnen"></Button>
+                <Button x:Name="Berechnen" Style="{DynamicResource CalculateButton}" Content="Berechnen"></Button>
             </StackPanel>
         </Border>
     </Grid>
