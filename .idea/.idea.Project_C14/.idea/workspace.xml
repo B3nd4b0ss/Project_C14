@@ -7,8 +7,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="oli">
-      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
+    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +19,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/4b/6c884dc4/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/b8/a5c81e94/ControlTemplate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/ef/3f454a23/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/App.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/MainWindow.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/MainWindow.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/Pages/Account.xaml" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/Pages/Account.xaml.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/Pages/Main.xaml" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/Pages/Erweiterung.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserControls/InfoCard.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -251,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685606726919</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="a">
+      <created>1685607303144</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1685607303144</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,8 +268,8 @@
     <MESSAGE value="m" />
     <MESSAGE value="aaahhhh" />
     <MESSAGE value="h" />
-    <MESSAGE value="a" />
     <MESSAGE value="oli" />
-    <option name="LAST_COMMIT_MESSAGE" value="oli" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
 </project>
