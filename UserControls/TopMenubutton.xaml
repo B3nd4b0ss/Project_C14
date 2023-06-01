@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" d:DesignWidth="100" Name="TopMenuButton">
-    <Button Style="{StaticResource TopMenuButton}">
+    <Button Style="{DynamicResource TopMenuButton}">
         <Grid ClipToBounds="True">
             <Icon:PackIconMaterial Kind="{Binding ElementName=menuButton,Path=Icon}" Style="{StaticResource TopMenuButtonIcon}"/>
         </Grid>

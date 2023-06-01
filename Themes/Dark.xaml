@@ -22,11 +22,11 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="black"/>
+                    <Setter Property="Foreground" Value="#7368ff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
                 <DataTrigger Binding="{Binding ElementName=menubutton, Path=IsActive}" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Foreground" Value="#7368ff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </DataTrigger>
             </Style.Triggers>
@@ -42,7 +42,7 @@
         </Style>
 
         <Style x:Key="searchTextBox" TargetType="TextBox">
-            <Setter Property="Background" Value="#2C4F40"/>
+            <Setter Property="Background" Value="#1e2e44"/>
             <Setter Property="Foreground" Value="#9ea4ad"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
@@ -69,8 +69,8 @@
         </Style>
         
         <Style x:Key="BerchnenText" TargetType="TextBox">
-            <Setter Property="Background" Value="DarkGreen"/>
-            <Setter Property="Foreground" Value="Black"/>
+            <Setter Property="Background" Value="#151f2d"/>
+            <Setter Property="Foreground" Value="#d9d9d9"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>
             <Setter Property="Padding" Value="15 15 15 15"/>
@@ -113,7 +113,7 @@
 
         
         <Style x:Key="TopMenuButton" TargetType="Button">
-            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Background" Value="#1e2e44"/>
             <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="Height" Value="45"/>
             <Setter Property="Width" Value="45"/>
@@ -132,11 +132,11 @@
 
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Foreground" Value="#7368ff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
                 <DataTrigger Binding="{Binding ElementName=TopMenubutton, Path=IsActive}" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Foreground" Value="#7368ff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </DataTrigger>
             </Style.Triggers>
@@ -152,19 +152,17 @@
         </Style>
 
         <Style x:Key="MainBorder" TargetType="Border">
-            <Setter Property="Background" Value="#2C4F40"/>
+            <Setter Property="Background" Value="#1e2e44"/>
             <Setter Property="Padding" Value="20"/>
             <Setter Property="CornerRadius" Value="10"/>
         </Style>
-        
-        <Style x:Key="ButtonBorder" TargetType="Border">
-            <Setter Property="Background" Value="#2C4F40"/>
-            <Setter Property="Padding" Value="20"/>
-            <Setter Property="CornerRadius" Value="10"/>
-        </Style>
+    
+    <Style x:Key="MainMainBorder" TargetType="Border">
+        <Setter Property="Background" Value="#151f2d"/>
+    </Style>
 
-        <Style x:Key="CalculateButton" TargetType="Button">
-            <Setter Property="Background" Value="#3E7C17"/>
+    <Style x:Key="CalculateButton" TargetType="Button">
+            <Setter Property="Background" Value="#151f2d"/>
             <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Tag" Value="Hidden"/>
@@ -180,19 +178,15 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#61E693"/>
+                    <Setter Property="Background" Value="#482980"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
-                <DataTrigger Binding="{Binding ElementName=menubutton, Path=IsActive}" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
-                    <Setter Property="Tag" Value="Visible"/>
-                </DataTrigger>
             </Style.Triggers>
 
         </Style>
         
         <Style x:Key="LoginButton" TargetType="Button">
-            <Setter Property="Background" Value="#3E7C17"/>
+            <Setter Property="Background" Value="#1e2e44"/>
             <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Tag" Value="Hidden"/>
@@ -208,13 +202,9 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Foreground" Value="#7368ff"/>
                     <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
-                <DataTrigger Binding="{Binding ElementName=menubutton, Path=IsActive}" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
-                    <Setter Property="Tag" Value="Visible"/>
-                </DataTrigger>
             </Style.Triggers>
 
         </Style>
@@ -247,7 +237,7 @@
         </Style>
         
         <Style x:Key="AccountTextBox" TargetType="TextBox">
-            <Setter Property="Background" Value="DarkGreen"/>
+            <Setter Property="Background" Value="#482980"/>
             <Setter Property="Foreground" Value="#9ea4ad"/>
             <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="FontSize" Value="12"/>

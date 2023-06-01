@@ -33,7 +33,7 @@
                                Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
                     <TextBox Style="{DynamicResource AccountTextBox}"/>
                 </Grid>
-                <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{StaticResource CalculateButton}" ></Button>
+                <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{DynamicResource LoginButton}" ></Button>
             </Grid>
         </Border>
     </Grid>

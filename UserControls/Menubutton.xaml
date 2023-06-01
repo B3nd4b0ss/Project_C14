@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              mc:Ignorable="d" d:DesignWidth="100" Name="menuButton">
-    <Button Style="{StaticResource menuButton}">
+    <Button Style="{DynamicResource menuButton}">
         <Grid ClipToBounds="True">
             <Ellipse Width="100" Height="100" Fill="Gray" Margin="-190 -30 0 0">
                 <Ellipse.Style>
