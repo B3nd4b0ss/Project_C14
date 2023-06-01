@@ -168,7 +168,7 @@
         </Style>
 
         <Style x:Key="CalculateButton" TargetType="Button">
-            <Setter Property="Background" Value="#54FF9F"/>
+            <Setter Property="Background" Value="DarkGreen"/>
             <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Tag" Value="Hidden"/>
@@ -184,8 +184,9 @@
             </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#61E693"/>
+                    <Setter Property="Background" Value="LightGreen"/>
                     <Setter Property="Tag" Value="Visible"/>
+                    <Setter Property="Foreground" Value="Black"/>
                 </Trigger>
             </Style.Triggers>
 
