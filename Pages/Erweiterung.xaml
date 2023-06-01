@@ -7,7 +7,7 @@
       mc:Ignorable="d"
       Title="Erweiterung" Height="500" Width="1200">
     <Grid>
-        <Border Style="{StaticResource MainBorder}" Margin="30 0">
+        <Border Style="{DynamicResource MainBorder}" Margin="30 0">
             <StackPanel>
                 <TextBlock x:Name="Text1"></TextBlock>
                 <TextBlock x:Name="Text2"></TextBlock>

@@ -6,8 +6,12 @@
       xmlns:local="clr-namespace:Project_C14.Pages.AccountSubPages"
       mc:Ignorable="d"
       Title="LoginFace" Height="500" Width="1200">
+    <Page.Resources>
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"></BooleanToVisibilityConverter>
+    <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"></BooleanToVisibilityConverter>
+    </Page.Resources>
     <Grid>
-        <Border Style="{StaticResource MainBorder}" Margin="30 0">
+        <Border Style="{DynamicResource MainBorder}" Margin="30 0">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"/>
@@ -20,14 +24,14 @@
                 <Grid Grid.Row="1" >
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                IsHitTestVisible="False" Text="Benutzername"
-                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
-                    <TextBox Style="{StaticResource AccountTextBox}"/>
+                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                    <TextBox Style="{DynamicResource AccountTextBox}"/>
                 </Grid>
                 <Grid Grid.Row="2">
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                IsHitTestVisible="False" Text="Passwort"
-                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource boolToVisibility}}"/>
-                    <TextBox Style="{StaticResource AccountTextBox}"/>
+                               Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
+                    <TextBox Style="{DynamicResource AccountTextBox}"/>
                 </Grid>
                 <Button Grid.Row="3" Margin="300 10" Content="Login" Style="{StaticResource CalculateButton}" ></Button>
             </Grid>

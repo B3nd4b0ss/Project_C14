@@ -13,5 +13,6 @@ namespace Project_C14
     /// </summary>
     public partial class App : Application
     {
+        
     }
 }

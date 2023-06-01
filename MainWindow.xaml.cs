@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Linq;
 using System.Threading;
+using Project_C14.Properties;
 using MahApps.Metro.IconPacks;
 using Project_C14.UserControls;
 using System.Windows;
 using System.Windows.Input;
 using Project_C14.Pages;
 using Project_C14.Pages.AccountSubPages;
-
 
 namespace Project_C14
 {
@@ -15,11 +16,13 @@ namespace Project_C14
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
             Code.Classes.Data.Initialize();
             MainFrame.Source = new Uri("Pages/Main.xaml", UriKind.Relative);
+
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)
@@ -29,7 +32,7 @@ namespace Project_C14
                 this.DragMove();
             }
         }
-        
+
 
         private void OnClick_Power(object sender, RoutedEventArgs e)
         {
@@ -40,7 +43,7 @@ namespace Project_C14
         {
             MainFrame.Content = new Main();
         }
-        
+
 
         private void OnClick_Download(object sender, RoutedEventArgs e)
         {
@@ -51,14 +54,14 @@ namespace Project_C14
         {
             MainFrame.Content = new Library();
         }
-        
-        
+
+
 
         private void Erweiterung_OnClick(object sender, RoutedEventArgs e)
         {
             MainFrame.Content = new Erweiterung();
         }
-        
+
 
         private void Account_Click(object sender, RoutedEventArgs e)
         {

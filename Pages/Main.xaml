@@ -12,7 +12,7 @@
         <BooleanToVisibilityConverter x:Key="booleanToVisibilityConverter"></BooleanToVisibilityConverter>
     </Page.Resources>
     <Grid>
-        <Border Style="{StaticResource MainBorder}" Margin="30 0">
+        <Border Style="{DynamicResource MainBorder}" Margin="30 0">
                 <Grid Grid.Row="2" Grid.Column="1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -39,12 +39,12 @@
                                <TextBlock Margin="15 0 300 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                           IsHitTestVisible="False" Text="10e-12"
                                           Visibility="{Binding ElementName=Box, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-                               <TextBox x:Name="Box" Style="{StaticResource BerchnenText}" Margin="0 0 300 0"/>  
+                               <TextBox x:Name="Box" Style="{DynamicResource BerchnenText}" Margin="0 0 300 0"/>  
                                <Label Content="Bitte geben Sie den Referenzwert ein: " Foreground="#9ea4ad" VerticalAlignment="Center" Margin=" 0 0 -150 75" HorizontalAlignment="Right"/>
                                 <TextBlock Margin="465 0 -150 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                            IsHitTestVisible="False" Text="10e-12"
                                            Visibility="{Binding ElementName=TextBox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
-                                <TextBox x:Name="TextBox" Style="{StaticResource BerchnenText}" Margin="450 0 -150 0"/>
+                                <TextBox x:Name="TextBox" Style="{DynamicResource BerchnenText}" Margin="450 0 -150 0"/>
                             </Grid>
                             <Button Margin="0 100 0 -50" Padding="0 50 0 0" Content="Berechnen" Height="50" Width="226" HorizontalAlignment="Center" VerticalAlignment="Bottom" Style="{StaticResource CalculateButton}" BorderBrush="{x:Null}" Click="Calculate"/>
                         </StackPanel>

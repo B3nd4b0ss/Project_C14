@@ -37,22 +37,22 @@
                     <StackPanel VerticalAlignment="Top" Margin="0 105 0 0">
                         
                         <!-- Menu Buttons -->
-                        <Button Style="{StaticResource menuButton}" Click="OnClick_Home">
-                            <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource menuButtonIcon}"/>
+                        <Button Style="{DynamicResource menuButton}" Click="OnClick_Home">
+                            <Icon:PackIconMaterial Kind="HomeVariant" Style="{DynamicResource menuButtonIcon}"/>
                         </Button>
-                        <Button Style="{StaticResource menuButton}" Click="OnClick_Library">
-                            <Icon:PackIconMaterial Kind="Bookmark" Style="{StaticResource menuButtonIcon}"/>
+                        <Button Style="{DynamicResource menuButton}" Click="OnClick_Library">
+                            <Icon:PackIconMaterial Kind="Bookmark" Style="{DynamicResource menuButtonIcon}"/>
                         </Button>
-                        <Button Style="{StaticResource menuButton}" Click="OnClick_Download">
-                            <Icon:PackIconMaterial Kind="Download" Style="{StaticResource menuButtonIcon}" />
+                        <Button Style="{DynamicResource menuButton}" Click="OnClick_Download">
+                            <Icon:PackIconMaterial Kind="Download" Style="{DynamicResource menuButtonIcon}" />
                         </Button>
-                        <Button Style="{StaticResource menuButton}" Click="Erweiterung_OnClick">
-                            <Icon:PackIconMaterial Kind="Abacus" Style="{StaticResource menuButtonIcon}"/>
+                        <Button Style="{DynamicResource menuButton}" Click="Erweiterung_OnClick">
+                            <Icon:PackIconMaterial Kind="Abacus" Style="{DynamicResource menuButtonIcon}"/>
                         </Button>
 
                     </StackPanel>
-                    <Button Style="{StaticResource menuButton}" Click="OnClick_Power" VerticalAlignment="Bottom" Margin="0 30">
-                        <Icon:PackIconMaterial Kind="Power" Style="{StaticResource menuButtonIcon}"/>
+                    <Button Style="{DynamicResource menuButton}" Click="OnClick_Power" VerticalAlignment="Bottom" Margin="0 30">
+                        <Icon:PackIconMaterial Kind="Power" Style="{DynamicResource menuButtonIcon}"/>
                     </Button>
 
                 </Grid>
@@ -70,19 +70,19 @@
                     <TextBlock Margin="40 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                    IsHitTestVisible="False" Text="Search here..."
                                    Visibility="{Binding ElementName=textbox, Path=Text.IsEmpty, Converter={StaticResource BoolToVisibility}}"/>
-                    <TextBox x:Name="textbox" Style="{StaticResource searchTextBox}" Margin="0 0 15 0"/>
+                    <TextBox x:Name="textbox" Style="{DynamicResource searchTextBox}" Margin="0 0 15 0"/>
                     <Icon:PackIconMaterial Kind="Magnify" Width="15" Height="15" Foreground="#9ea4ad" Margin="15 0 0 0" VerticalAlignment="Center" HorizontalAlignment="Left"/>
                 </Grid>
 
                 <!-- Buttons -->
-                <Border Grid.Column="1" CornerRadius="20" Style="{StaticResource MainBorder}" Padding="0 2 15 2" >
+                <Border Grid.Column="1" CornerRadius="20" Style="{DynamicResource MainBorder}" Padding="0 2 15 2" >
                     <StackPanel Orientation="Horizontal" Margin="20 0 0 0">
                    
-                    <Button Style="{StaticResource TopMenuButton}" Background="#2C4F40" Click="Settings_Click">
-                        <Icon:PackIconMaterial Kind="CogOutline" Style="{StaticResource TopMenuButtonIcon}"/>
+                    <Button Style="{DynamicResource TopMenuButton}" Background="#2C4F40" Click="Settings_Click">
+                        <Icon:PackIconMaterial Kind="CogOutline" Style="{DynamicResource TopMenuButtonIcon}"/>
                     </Button>
-                    <Button Style="{StaticResource TopMenuButton}" Background="#2C4F40" Click="Account_Click">
-                        <Icon:PackIconMaterial Kind="Account" Style="{StaticResource TopMenuButtonIcon}"/>
+                    <Button Style="{DynamicResource TopMenuButton}" Background="#2C4F40" Click="Account_Click">
+                        <Icon:PackIconMaterial Kind="Account" Style="{DynamicResource TopMenuButtonIcon}"/>
                     </Button>
                     </StackPanel>
                 </Border>
@@ -97,4 +97,6 @@
         </Grid>
         
     </Border>
+    
 </Window>
+
