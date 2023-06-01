@@ -198,11 +198,11 @@
     <Compile Include="Pages\Settings.xaml.cs">
       <DependentUpon>Settings.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControls\InfoCard.xaml.cs">
-      <DependentUpon>InfoCard.xaml</DependentUpon>
-    </Compile>
     <Compile Include="UserControls\Menubutton.xaml.cs">
       <DependentUpon>Menubutton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\TopMenubutton.xaml.cs">
+      <DependentUpon>TopMenubutton.xaml</DependentUpon>
     </Compile>
     <Page Include="Pages\Account.xaml" />
     <Page Include="Pages\AccountSubPages\AccountManageFace.xaml" />
@@ -233,11 +233,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\InfoCard.xaml">
+    <Page Include="UserControls\Menubutton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControls\Menubutton.xaml">
+    <Page Include="UserControls\TopMenubutton.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

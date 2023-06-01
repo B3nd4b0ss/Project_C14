@@ -113,41 +113,44 @@
             </Setter>
         </Style>
 
+        
         <Style x:Key="TopMenuButton" TargetType="Button">
             <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="Width" Value="45"/>
+            <Setter Property="Foreground" Value="#edeeee"/>
             <Setter Property="Height" Value="45"/>
+            <Setter Property="Width" Value="45"/>
             <Setter Property="FocusVisualStyle" Value="{x:Null}"/>
             <Setter Property="Margin" Value="3 0"/>
             <Setter Property="Tag" Value="Hidden"/>
             <Setter Property="Template">
                 <Setter.Value>
-                    <ControlTemplate TargetType="Icon:PackIconMaterial">
-                        <Border Background="{TemplateBinding Background}" CornerRadius="20">
-                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}">
+                            <ContentPresenter VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
+
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
                     <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Tag" Value="Visible"/>
                 </Trigger>
+                <DataTrigger Binding="{Binding ElementName=TopMenubutton, Path=IsActive}" Value="True">
+                    <Setter Property="Foreground" Value="#61E693"/>
+                    <Setter Property="Tag" Value="Visible"/>
+                </DataTrigger>
             </Style.Triggers>
-        </Style>
+</Style>
 
 
         <Style x:Key="TopMenuButtonIcon" TargetType="Icon:PackIconMaterial">
-            <Setter Property="Width" Value="15"/>
-            <Setter Property="Height" Value="15"/>
+            <Setter Property="Width" Value="18"/>
+            <Setter Property="Height" Value="18"/>
             <Setter Property="HorizontalAlignment" Value="Center"/>
             <Setter Property="VerticalAlignment" Value="Center"/>
-            <Setter Property="Foreground" Value="#edeeee"/>
-            <Style.Triggers>
-                <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Foreground" Value="#61E693"/>
-                </Trigger>
-            </Style.Triggers>
+            <Setter Property="Foreground" Value="{Binding Path=Foreground, RelativeSource={RelativeSource FindAncestor,AncestorType={x:Type Button}}}"/>
         </Style>
 
         <Style x:Key="MainBorder" TargetType="Border">
