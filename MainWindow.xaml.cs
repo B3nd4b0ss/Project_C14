@@ -5,6 +5,7 @@ using Project_C14.UserControls;
 using System.Windows;
 using System.Windows.Input;
 using Project_C14.Pages;
+using Project_C14.Pages.AccountSubPages;
 
 
 namespace Project_C14
@@ -61,7 +62,7 @@ namespace Project_C14
 
         private void Account_Click(object sender, RoutedEventArgs e)
         {
-            MainFrame.Content = new Account();
+            AccountFrame.Content = new LoginFace();
         }
 
         private void Settings_Click(object sender, RoutedEventArgs e)
