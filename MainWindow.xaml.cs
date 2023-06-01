@@ -59,6 +59,7 @@ namespace Project_C14
 
         private void Erweiterung_OnClick(object sender, RoutedEventArgs e)
         {
+            
             MainFrame.Content = new Erweiterung();
         }
 
