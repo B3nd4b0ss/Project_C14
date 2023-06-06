@@ -12,6 +12,7 @@ public partial class LoginFace : Page
 
     private void Login_Click(object sender, RoutedEventArgs e)
     {
-        throw new System.NotImplementedException();
+        string username = UsernameBox.Text;
+        string password = PasswordBox.Text;
     }
 }

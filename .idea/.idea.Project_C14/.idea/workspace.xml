@@ -9,17 +9,37 @@
   <component name="ChangeListManager">
     <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Classes/Calculate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Calculate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Structs/Probe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Structs/Probe.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e48e1876-df96-4971-90ca-d7cc5edb0a17" />
+        <option name="url" value="https://github.com/B3nd4b0ss/Project_C14.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/93a8f82184b4439ca5abff025375fe32564da0/f6/42151e0e/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/4b/6c884dc4/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/b8/a5c81e94/ControlTemplate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/ef/3f454a23/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock://C:/Users/ben/Desktop/IMS/Programmieren/C14 Zerfall/ding/Pages/Erweiterung.xaml" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserControls/InfoCard.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -35,27 +55,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Robin Jenni\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Robin Jenni\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Robin Jenni\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Robin Jenni\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Robin Jenni\\AppData\\Roaming\\JetBrains\\Rider2023.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\Robin Jenni\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Project_C14" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -91,6 +112,7 @@
       <workItem from="1685547724528" duration="14000" />
       <workItem from="1685547752276" duration="25958000" />
       <workItem from="1685597243979" duration="3911000" />
+      <workItem from="1686061223129" duration="3957000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1685531697459</created>
@@ -260,6 +282,17 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Lolis sind Geil" />
@@ -271,5 +304,12 @@
     <MESSAGE value="oli" />
     <MESSAGE value="a" />
     <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+  <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#Project_C14.Main.CalculateBtn_Click" memberName="simpleProbe" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
