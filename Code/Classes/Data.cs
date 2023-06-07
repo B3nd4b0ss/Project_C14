@@ -37,7 +37,7 @@ public static class Data
     /// These probes can be loaded with the LoadProbes() function back into the List.
     /// </summary>
 
-    public static void WriteProbesToFile()
+    public static void SaveProbe()
     {
         File.WriteAllText(SaveFile, null);
         File.WriteAllText(SaveFile, JsonConvert.SerializeObject(_probes));
@@ -49,7 +49,14 @@ public static class Data
     /// </summary>
     public static void LoadProbes()
     {
-        _probes = JsonConvert.DeserializeObject<List<Probe>>(File.ReadAllText(SaveFile));
+        if (File.Exists(SaveFile))
+        {
+            _probes = JsonConvert.DeserializeObject<List<Probe>>(File.ReadAllText(SaveFile));
+        }
+        else
+        {
+            File.Create(SaveFile);
+        }
     }
 
     /// <summary>
@@ -71,7 +78,7 @@ public static class Data
         return result;
     }
 
-    public static Probe[]? GetProbes()
+    public static Probe[] GetProbes()
     {
         return _probes?.ToArray();
     }

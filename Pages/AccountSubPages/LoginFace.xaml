@@ -24,14 +24,13 @@
                 <Grid Grid.Row="1" >
                     <TextBlock Margin="240 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
                                IsHitTestVisible="False" Text="Benutzername"
-                               Visibility="{Binding ElementName=Box, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
+                               Visibility="{Binding ElementName=UsernameBox, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
                     <TextBox x:Name="UsernameBox" Style="{DynamicResource AccountTextBox}" Margin="200 0"/>
                 </Grid>
                 <Grid Grid.Row="2">
-                    <TextBlock Margin="240 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
-                               IsHitTestVisible="False" Text="Passwort"
-                               Visibility="{Binding ElementName=TextBox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"/>
-                    <TextBox x:Name="PasswordBox" Style="{DynamicResource AccountTextBox}" Margin="200 0" />
+                    <TextBlock x:Name="TTPTextBlock" Margin="240 0 15 0" VerticalAlignment="Center" Foreground="#9ea4ad" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="Passwort"/>
+                    <PasswordBox x:Name="PasswordBox" Style="{DynamicResource AccountPasswordBox}" Margin="200 0" PasswordChanged="PasswordBox_PasswordChanged"/>
                 </Grid>
                 <Button Grid.Row="3" Margin="450 25" Content="Login" Style="{DynamicResource LoginButton}" Click="Login_Click" ></Button>
             </Grid>

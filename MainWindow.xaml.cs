@@ -8,6 +8,7 @@ using System.Windows;
 using System.Windows.Input;
 using Project_C14.Pages;
 using Project_C14.Pages.AccountSubPages;
+using Project_C14.Code.Classes;
 
 namespace Project_C14
 {
@@ -20,7 +21,8 @@ namespace Project_C14
         public MainWindow()
         {
             InitializeComponent();
-            Code.Classes.Data.Initialize();
+            Data.Initialize();
+            Data.LoadProbes();
             MainFrame.Source = new Uri("Pages/Main.xaml", UriKind.Relative);
         }
 
@@ -35,6 +37,7 @@ namespace Project_C14
 
         private void OnClick_Power(object sender, RoutedEventArgs e)
         {
+            Data.SaveProbe();
             System.Environment.Exit(0);
         }
 

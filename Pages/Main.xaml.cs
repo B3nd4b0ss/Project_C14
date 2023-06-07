@@ -16,13 +16,24 @@ public partial class Main : Page
     {
         Probe simpleProbe = new Probe("SimpleProbe");
 
-        double reference = Double.Parse(ReferenceC14TextBox.Text);
-        double sample = Double.Parse(SampleC14TextBox.Text);
-        
-        simpleProbe.ReferencC14 = reference;
-        simpleProbe.SampleC14 = sample;
-        simpleProbe = Code.Classes.Calculate.SimpleCalc(simpleProbe);
+        double reference;
+        double sample;
 
-        OutputLabel.Content = Math.Round(simpleProbe.SimpleAge);
+        if (double.TryParse(ReferenceC14TextBox.Text, out reference))
+        {
+            simpleProbe.ReferencC14 = reference;
+        }
+        else
+        {
+            simpleProbe.ReferencC14 = 1.22104 * 10E-12;
+        }
+
+        if (double.TryParse(SampleC14TextBox.Text, out sample))
+        {
+            simpleProbe.SampleC14 = sample;
+            simpleProbe = Code.Classes.Calculate.SimpleCalc(simpleProbe);
+
+            OutputLabel.Content = Math.Round(simpleProbe.SimpleAge);
+        }
     }
 }

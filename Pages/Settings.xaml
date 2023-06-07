@@ -10,33 +10,9 @@
         <Border Style="{DynamicResource MainBorder}" Margin="30 0" >
             <Grid>
                 <Label Content="Darkmode" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 200 0" FontSize="15" Foreground="White"></Label>
-                <ToggleButton Width="60" Height="30" Click="ThemeToggleButton_Click" x:Name="ThemeToggleButton">
-                <ToggleButton.Template>
-                    <ControlTemplate TargetType="ToggleButton">
-                        <Grid>
-                            <Ellipse x:Name="BackgroundEllipse" Fill="Red" />
-                            <Ellipse x:Name="Thumb" Fill="White" HorizontalAlignment="Left" Margin="2"
-                                     Width="26" Height="26" RenderTransformOrigin="0.5,0.5">
-                                <Ellipse.RenderTransform>
-                                    <TranslateTransform X="0" />
-                                </Ellipse.RenderTransform>
-                            </Ellipse>
-                        </Grid>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsChecked" Value="True">
-                                <Setter TargetName="BackgroundEllipse" Property="Fill" Value="Green" />
-                                <Setter TargetName="Thumb" Property="RenderTransform">
-                                    <Setter.Value>
-                                        <TranslateTransform X="30" />
-                                    </Setter.Value>
-                                </Setter>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </ToggleButton.Template>
-            </ToggleButton>
+
+                <ToggleButton x:Name="ThemeToggleButton" IsChecked="{Binding Darkmode}" Style="{DynamicResource IphoneToggleButton}" Click="ThemeToggleButton_Click"/>
             </Grid>
         </Border>
-        
     </Grid>
 </Page>

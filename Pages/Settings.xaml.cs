@@ -6,7 +6,7 @@ namespace Project_C14;
 
 public partial class Settings : Page
 {
-    private bool _darkmode = false;
+    public bool Darkmode {get; set;}
     
     public Settings()
     {
@@ -18,16 +18,18 @@ public partial class Settings : Page
         if (ThemeToggleButton.IsChecked == true)
         {
             // Dark theme is selected
-            _darkmode = true;
+            Darkmode = true;
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("Themes/Dark.xaml", UriKind.Relative) });
+            ThemeToggleButton.IsChecked = true;
         }
         else
         {
             // Light theme is selected
-            _darkmode = false;
+            Darkmode = false;
             Application.Current.Resources.MergedDictionaries.Clear();
             Application.Current.Resources.MergedDictionaries.Add(new ResourceDictionary() { Source = new Uri("Themes/Light.xaml", UriKind.Relative) });
+            ThemeToggleButton.IsChecked = false;
         }
     }
 
