@@ -7,17 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Classes/Calculate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Calculate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Structs/Probe.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Structs/Probe.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml.cs" afterDir="false" />
-    </list>
+    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +30,7 @@
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/93a8f82184b4439ca5abff025375fe32564da0/f6/42151e0e/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/4b/6c884dc4/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/Robin Jenni/RiderProjects/Project_C14/Code/Classes/Calculate.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserControls/InfoCard.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -112,7 +103,7 @@
       <workItem from="1685547724528" duration="14000" />
       <workItem from="1685547752276" duration="25958000" />
       <workItem from="1685597243979" duration="3911000" />
-      <workItem from="1686061223129" duration="3957000" />
+      <workItem from="1686061223129" duration="4026000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1685531697459</created>
@@ -275,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685607303144</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="V2 In Progress">
+      <created>1686072476331</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686072476331</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +301,8 @@
     <MESSAGE value="h" />
     <MESSAGE value="oli" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="V2 In Progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="V2 In Progress" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

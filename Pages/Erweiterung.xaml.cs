@@ -8,4 +8,14 @@ public partial class Erweiterung : Page
     {
         InitializeComponent();
     }
+
+    private void EditProbeButton_Click(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+    }
+
+    private void NewProbeButton_Click(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+    }
 }
