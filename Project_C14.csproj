@@ -216,6 +216,7 @@
     <Compile Include="Code\Classes\Calculate.cs" />
     <Compile Include="Code\Classes\Data.cs" />
     <Compile Include="Code\Classes\AccMngm.cs" />
+    <Compile Include="Code\Classes\Hasher.cs" />
     <Compile Include="Code\Structs\Probe.cs" />
     <Compile Include="Code\Structs\User.cs" />
     <Compile Include="Pages\Account.xaml.cs">

@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using Newtonsoft.Json;
-using Nito.AsyncEx.Synchronous;
-using NNR_3.Structs;
+using Project_C14.Code.Structs;
 
 namespace Project_C14.Code.Classes;
 
-public class AccMngm
+public static class AccMngm
 {
     public static User CurrentUser = new User();
 
@@ -20,9 +18,21 @@ public class AccMngm
         task.Wait();
     }
 
+    public static void Register()
+    {
+        var task = TryRegister();
+        task.Wait();
+    }
+
     public static void Logout()
     {
         CurrentUser = new User();
+    }
+
+    public static IPAddress GetIp()
+    {
+        WebClient client = new WebClient();
+        return IPAddress.Parse(client.DownloadString("https://api.ipify.org"));
     }
 
     private static async Task CheckLogin()
@@ -41,6 +51,8 @@ public class AccMngm
                 contents = contents.Trim(new Char[] { '[', ']' });
                 if (contents == "")
                 {
+                    MessageBox.Show(
+                        "Fehler bei der Anmeldung. Überprüfen Sie Ihr Passwort und versuchen Sie es erneut.");
                     return;
                 }
 
@@ -50,7 +62,36 @@ public class AccMngm
         }
         catch (Exception ex)
         {
-            return;
+            MessageBox.Show(
+                "Konnte Login-Daten nicht überprüfen. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.");
+        }
+    }
+
+    public static async Task TryRegister()
+    {
+        try
+        {
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://c14.nonamerestall.ch/api.php/");
+
+            HttpResponseMessage response = client.PutAsync(
+                $"user/register?username={CurrentUser.Username}&password={CurrentUser.Password}&creationIp={CurrentUser.CurrentIp}", null).Result;
+
+            if (response.IsSuccessStatusCode)
+            {
+                CurrentUser.LoggedIn = true;
+                MessageBox.Show("Ihr Benutzeraccount wurde erfolgreich erstellt.");
+            }
+            else
+            {
+                MessageBox.Show("Dieser Benutzername existiert bereits!");
+                Logout();
+            }
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show(
+                "Konnte Registrierung nicht abschliessen. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.");
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
+using Project_C14.Code.Classes;
 
 namespace Project_C14.Pages.AccountSubPages;
 
@@ -17,7 +18,19 @@ public partial class RegisterFace : Page
 
     private void Register_Click(object sender, System.Windows.RoutedEventArgs e)
     {
-
+        if (PasswordBox.Password.Length >= 5 && UsernameBox.Text.Length >= 5)
+        {
+            AccMngm.CurrentUser.Username = UsernameBox.Text;
+            AccMngm.CurrentUser.Password = Hasher.HashSha512(PasswordBox.Password);
+            AccMngm.CurrentUser.CurrentIp = AccMngm.GetIp();
+            
+            AccMngm.Register();
+        }
+        else
+        {
+            MessageBox.Show(
+                "Bitte wählen Sie einen Benutzernamen und ein Passwort welche beide mindestens fünf Zeichen beinhalten.");
+        }
     }
 
     private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)

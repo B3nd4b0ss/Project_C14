@@ -1,51 +1,18 @@
-﻿using System;
+﻿using Project_C14.Code.Structs;
+using System.Collections.Generic;
+using System.Net;
 
-namespace NNR_3.Structs
+namespace Project_C14.Code.Structs;
+
+public struct User
 {
-	public struct User
-	{
-		private string _username;
-		private string _name;
-		private string _userID;
-		private string _randomID;
-        private string _password;
-		private bool _isLoggedIn;
+	public string Username { get; set; }
 
-        public string Username
-		{
-			get { return _username; }
-			set { _username = value; }
-		}
+	public List<Probe> UserProbes { get; set; }
 
-		public string Name
-		{
-			get { return _name; }
-			set { _name = value; }
-		}
+	public string Password { get; set; }
 
-		public string UserID
-		{
-			get { return _userID; }
-			set { _userID = value; }
-		}
+	public IPAddress CurrentIp { get; set; }
 
-		public string RandomID
-		{
-			get { return _randomID; }
-			set { _randomID = value; }
-		}
-
-		public string Password
-		{
-			get { return _password; }
-			set { _password = value; }
-		}
-
-		public bool LoggedIn
-		{
-			get { return _isLoggedIn; }
-			set { _isLoggedIn = value; }
-		}
-	}
+	public bool LoggedIn { get; set; }
 }
-

@@ -25,7 +25,7 @@ public partial class Main : Page
         }
         else
         {
-            simpleProbe.ReferencC14 = 1.22104 * 10E-12;
+            simpleProbe.ReferencC14 = 1.22104E-12;
         }
 
         if (double.TryParse(SampleC14TextBox.Text, out sample))

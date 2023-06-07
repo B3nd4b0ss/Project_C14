@@ -47,7 +47,7 @@
                                    VerticalAlignment="Center" Margin=" 0 0 -150 75" HorizontalAlignment="Right" />
                             <TextBlock Margin="465 0 -150 0" VerticalAlignment="Center" Foreground="#9ea4ad"
                                        Panel.ZIndex="1"
-                                       IsHitTestVisible="False" Text="10e-12"
+                                       IsHitTestVisible="False" Text="1.22104E-12"
                                        Visibility="{Binding ElementName=ReferenceC14TextBox, Path=Text.IsEmpty, Converter={StaticResource booleanToVisibilityConverter}}"
                                        MaxHeight="20" MaxWidth="200" />
                             <TextBox x:Name="ReferenceC14TextBox" Style="{DynamicResource BerchnenText}"

@@ -8,7 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Code/Classes/Hasher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Classes/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Data.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Code/Structs/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Structs/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +117,7 @@
       <workItem from="1685547752276" duration="25958000" />
       <workItem from="1685597243979" duration="3911000" />
       <workItem from="1686061223129" duration="4026000" />
+      <workItem from="1686160448040" duration="2460000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1685531697459</created>

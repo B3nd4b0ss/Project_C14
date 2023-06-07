@@ -96,4 +96,14 @@ public static class Data
     {
         File.Copy(pathToImportFile, SaveFile, true);
     }
+
+    public static void PushProbes()
+    {
+        
+    }
+
+    public static void PullProbes()
+    {
+        
+    }
 }
