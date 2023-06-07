@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using Project_C14.Code.Classes;
+using Project_C14;
 
 namespace Project_C14.Pages.AccountSubPages;
 
@@ -9,6 +10,16 @@ public partial class LoginFace : Page
     public LoginFace()
     {
         InitializeComponent();
+    }
+
+    private void ForLogin_Click(object sender, RoutedEventArgs e)
+    {
+        
+    }
+
+    private void ForRegister_Click(object sender, RoutedEventArgs e)
+    {
+
     }
 
     private void Login_Click(object sender, RoutedEventArgs e)

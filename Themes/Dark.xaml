@@ -242,7 +242,7 @@
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="Height" Value="75"/>
-        <Setter Property="Padding" Value="24 30 0 0"/>
+        <Setter Property="Padding" Value="39 30 0 0"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Template">
             <Setter.Value>
@@ -270,7 +270,7 @@
         <Setter Property="BorderThickness" Value="0"/>
         <Setter Property="FontSize" Value="12"/>
         <Setter Property="Height" Value="75"/>
-        <Setter Property="Padding" Value="24 30 0 0"/>
+        <Setter Property="Padding" Value="39 30 0 0"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="Template">
             <Setter.Value>
