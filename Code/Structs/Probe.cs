@@ -8,7 +8,7 @@ public struct Probe
     }
     
     // Inputs
-    public string ProbeName { get; }
+    public string ProbeName { get; set; }
     public double AtmosphericC14InAtomsPerGramOfCarbon { get; set; } // Atmospheric C14 concentration in atoms per gram of carbon
     public double SampleC14InAtomsPerGramOfCarbon { get; set; } // C14 concentration in sample in atoms per gram of carbon
     public double SampleCarbonInGrams { get; set; } // Total carbon in sample in grams

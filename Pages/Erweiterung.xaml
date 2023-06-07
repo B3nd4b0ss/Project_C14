@@ -70,18 +70,24 @@
                 <Grid Grid.Row="4" Column="1">
                     <TextBox x:Name="SampleC14InAtomsPerGramOfCarbonTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
                 </Grid>
+
+                <Label Grid.Row="4" Grid.Column="2" Content="Das alter deiner Probe beträgt:" Foreground="WhiteSmoke" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
                 <!--#endregion-->
                 <!--#region Row 6 MITTE-->
                 <Label Grid.Row="5" Foreground="WhiteSmoke" Content="Total carbon in sample in grams"/>
                 <Grid Grid.Row="5" Column="1">
                     <TextBox x:Name="SampleCarbonInGramsTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
                 </Grid>
+
+                <Label x:Name="ResultLabel" Grid.Row="5" Grid.Column="2" Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 <!--#endregion-->
                 <!--#region Row 7-->
                 <Label Grid.Row="6" Foreground="WhiteSmoke" Content="Height above sea level in meters"/>
                 <Grid Grid.Row="6" Column="1">
                     <TextBox x:Name="SampleHeightInMetersTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
                 </Grid>
+
+                <Button Grid.Row="6" Grid.Column="2" Style="{DynamicResource CalculateButton}" Margin="2, 0, 2, 0" Content="Alter berechnen" Click="CalculateButton_Click"/>
                 <!--#endregion-->
                 <!--#region Row 8-->
                 <Label Grid.Row="7" Foreground="WhiteSmoke" Content="Geomagnetic field strength in&#10;microteslas"/>
@@ -102,7 +108,7 @@
                 </Grid>
                 <!--#endregion-->
                 <!--#region Row 11-->
-                <Button x:Name="SaveProbeButton" Grid.Row="10" Grid.Column="1" Content="Speichern" Margin="0, 2" Style="{DynamicResource CalculateButton}"/>
+                <Button x:Name="SaveProbeButton" Grid.Row="10" Grid.Column="1" Content="Speichern" Margin="0, 2" Style="{DynamicResource CalculateButton}" Click="SaveProbeButton_Click"/>
                 <!--#endregion-->
             </Grid>
         </Border>

@@ -33,7 +33,7 @@
                                IsHitTestVisible="False" Text="Passwort"/>
                     <PasswordBox x:Name="PasswordBox" Style="{DynamicResource AccountPasswordBox}" Margin="200 0" PasswordChanged="PasswordBox_PasswordChanged"/>
                 </Grid>
-                <Button Grid.Row="3" Margin="450 25" Content="Login" Style="{DynamicResource LoginButton}" Click="Login_Click" ></Button>
+                <Button Grid.Row="3" Margin="450 25" Content="Login" Style="{DynamicResource LoginButton}" Click="Login_Click" IsDefault="True"/>
             </Grid>
         </Border>
     </Grid>
