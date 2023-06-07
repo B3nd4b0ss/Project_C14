@@ -72,7 +72,7 @@
                                TextAlignment="Center"
                                Text="In den beiden Eingabefeldern oberhalb dieses Textes können Sie die absoluten C14 Werte oder die C14 zu C12 Verhältnisse eingeben.&#10;
                         Was davon Sie eingeben ist egal. Beachten Sie jedoch dass Sie für eine korrekte Berechnung des Alters in beiden Feldern&#10;
-                        die absolute Menge oder die Verhältnisse eingeben. Ansonsten führt dies zu unbrauchbaren Ergebnissen&#10;da sich die Werte in ihrer Art stark unterscheiden.">
+                        die absolute Menge oder die Verhältnisse eingeben. Ansonsten führt dies zu unbrauchbaren Ergebnissen,&#10;da sich die Werte in ihrer Art stark unterscheiden.">
 
                     </TextBlock>
                 </Grid>
