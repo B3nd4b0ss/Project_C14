@@ -74,7 +74,7 @@ public static class Data
 
     public static Probe GetProbeByName(string probeName)
     {
-        var result = _probes!.FirstOrDefault(x => x.ProbeName == probeName);
+        var result = _probes.FirstOrDefault(x => x.ProbeName == probeName);
         return result;
     }
 
