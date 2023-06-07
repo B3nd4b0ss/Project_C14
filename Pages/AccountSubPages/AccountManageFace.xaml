@@ -5,7 +5,7 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
       xmlns:local="clr-namespace:Project_C14.Pages.AccountSubPages"
       mc:Ignorable="d"
-      Title="AccountManageFace" Height="500" Width="1200">
+      Title="AccountManageFace" Height="400" Width="1000">
     <Grid>
         <Border Style="{DynamicResource MainBorder}">
             <Grid>
@@ -23,7 +23,7 @@
                 </Grid.RowDefinitions>
                 <Button Grid.Column="1" Grid.Row="1" Content="Pull Probes" Style="{DynamicResource LoginButton}" Width="200" Height="75" FontSize="15" Click="PullProbes_Click"/>
                 <Button Grid.Column="2" Grid.Row="1" Content="Push Probes" Style="{DynamicResource LoginButton}" Width="200" Height="75" FontSize="15" Click="PushProbes_Click"/>
-                <Button Grid.Row="3" Grid.Column="1" Content="Logout" Style="{DynamicResource LoginButton}" Grid.ColumnSpan="2" FontSize="35" Width="490" Click="Logout_Click"/>
+                <Button Grid.Row="3" Grid.Column="1" Content="Logout" Style="{DynamicResource LoginButton}" Grid.ColumnSpan="2" FontSize="35" Width="440" Click="Logout_Click"/>
 
             </Grid>
         </Border>
