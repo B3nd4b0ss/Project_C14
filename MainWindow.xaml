@@ -42,9 +42,9 @@
                         <Button Style="{DynamicResource menuButton}" Click="OnClick_Library">
                             <Icon:PackIconMaterial Kind="Bookmark" Style="{DynamicResource menuButtonIcon}"/>
                         </Button>
-                        <Button Style="{DynamicResource menuButton}" Click="OnClick_Download">
+                       <!-- <Button Style="{DynamicResource menuButton}" Click="OnClick_Download">
                             <Icon:PackIconMaterial Kind="Download" Style="{DynamicResource menuButtonIcon}" />
-                        </Button>
+                        </Button> -->
                         <Button Style="{DynamicResource menuButton}" Click="Erweiterung_OnClick">
                             <Icon:PackIconMaterial Kind="Abacus" Style="{DynamicResource menuButtonIcon}"/>
                         </Button>
@@ -88,11 +88,7 @@
             </Grid>
             
             <Frame Grid.Row="2" Grid.Column="1" x:Name="MainFrame" NavigationUIVisibility="Hidden" Source="Pages/Main.xaml"/>
-            <Frame Grid.Row="2" Grid.Column="1" x:Name="AccountFrame" NavigationUIVisibility="Hidden"/>
             
-
-
-
         </Grid>
         
     </Border>

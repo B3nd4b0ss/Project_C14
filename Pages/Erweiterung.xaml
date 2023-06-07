@@ -120,6 +120,8 @@
                 <!--#region Row 11-->
                 <Button x:Name="SaveProbeButton" Grid.Row="10" Grid.Column="1" Content="Speichern" Margin="0, 2"
                         Style="{DynamicResource CalculateButton}" Click="SaveProbeButton_Click" />
+                
+                <Button x:Name="ClearAllProbesButton" Grid.Row="10" Grid.Column="3" Content="Alle Proben löschen" Style="{DynamicResource CalculateButton}" Click="ClearAllProbesButton_OnClick"></Button>
                 <!--#endregion-->
             </Grid>
         </Border>

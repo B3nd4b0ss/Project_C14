@@ -8,7 +8,15 @@
       Title="Library" Height="500" Width="1200">
     <Grid>
         <Border Style="{DynamicResource MainBorder}" Margin="30 0">
-            <TextBlock Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="35"> This has not been implemented yet</TextBlock>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="9*"/>
+                </Grid.RowDefinitions>
+                
+                <TextBlock Foreground="WhiteSmoke" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="25">Hier sehen Sie eine Übersicht über alle Ihre Proben</TextBlock>
+                <StackPanel Grid.Row="1" x:Name="ListedProbesStackPanel"/>
+            </Grid>
         </Border>
     </Grid>
 </Page>

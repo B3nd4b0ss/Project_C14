@@ -4,12 +4,15 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Windows;
 using Newtonsoft.Json;
+using Nito.AsyncEx.Synchronous;
 using Project_C14.Code.Structs;
 
 namespace Project_C14.Code.Classes;
 
 public static class AccMngm
 {
+    public static bool RegisterWasSuccessfull;
+    
     public static User CurrentUser = new User();
 
     public static void Login()
@@ -81,15 +84,17 @@ public static class AccMngm
             {
                 CurrentUser.LoggedIn = true;
                 MessageBox.Show("Ihr Benutzeraccount wurde erfolgreich erstellt.");
+                RegisterWasSuccessfull = true;
+                return;
             }
-            else
-            {
-                MessageBox.Show("Dieser Benutzername existiert bereits!");
-                Logout();
-            }
+
+            MessageBox.Show("Dieser Benutzername existiert bereits!");
+            Logout();
+            RegisterWasSuccessfull = false;
         }
         catch (Exception ex)
         {
+            RegisterWasSuccessfull = false;
             MessageBox.Show(
                 "Konnte Registrierung nicht abschliessen. Bitte überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut.");
         }

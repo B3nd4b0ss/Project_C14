@@ -20,7 +20,7 @@ public partial class LoginFace : Page
     private void Login_Click(object sender, RoutedEventArgs e)
     {
         AccMngm.CurrentUser.Username = UsernameBox.Text;
-        AccMngm.CurrentUser.Password = PasswordBox.Password;
+        AccMngm.CurrentUser.Password = Hasher.HashSha512(PasswordBox.Password);
 
         AccMngm.Login();
 

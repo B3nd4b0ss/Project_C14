@@ -23,5 +23,6 @@ public partial class AccountManageFace : Page
     private void Logout_Click(object sender, System.Windows.RoutedEventArgs e)
     {
         AccMngm.Logout();
+        Account.UpdateFrame();
     }
 }

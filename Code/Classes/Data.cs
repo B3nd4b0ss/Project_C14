@@ -25,9 +25,10 @@ public static class Data
         _probes!.Add(newProbe);
     }
 
-    public static void Edit(Probe oldProbe)
+    public static void Edit(Probe oldProbe, Probe nProbe)
     {
-        // ignored
+        _probes.Remove(oldProbe); 
+        Create(nProbe);
     }
 
     /// <summary>

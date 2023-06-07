@@ -8,18 +8,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Code/Classes/Hasher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Code/Classes/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Structs/User.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Structs/User.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Main.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Main.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Library.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Library.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Library.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Library.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,8 @@
       <workItem from="1685547752276" duration="25958000" />
       <workItem from="1685597243979" duration="3911000" />
       <workItem from="1686061223129" duration="4026000" />
-      <workItem from="1686160448040" duration="2460000" />
+      <workItem from="1686160448040" duration="6182000" />
+      <workItem from="1686169206919" duration="2154000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1685531697459</created>
@@ -301,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686128639463</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Register works now">
+      <created>1686162962074</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1686162962074</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,9 +338,27 @@
     <MESSAGE value="oli" />
     <MESSAGE value="V2 In Progress" />
     <MESSAGE value="a" />
-    <option name="LAST_COMMIT_MESSAGE" value="a" />
+    <MESSAGE value="Register works now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Register works now" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pages/Library.xaml.cs</url>
+          <line>32</line>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Library.xaml.cs" initialLine="32" containingFunctionPresentation="Method 'ProbeButtonOnClick'">
+            <startOffsets>
+              <option value="930" />
+            </startOffsets>
+            <endOffsets>
+              <option value="931" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Project_C14.Main.CalculateBtn_Click" memberName="simpleProbe" />

@@ -25,6 +25,10 @@ public partial class RegisterFace : Page
             AccMngm.CurrentUser.CurrentIp = AccMngm.GetIp();
             
             AccMngm.Register();
+            if (AccMngm.RegisterWasSuccessfull)
+                Account.UpdateFrame();
+            else
+                Account.SetReg();
         }
         else
         {
