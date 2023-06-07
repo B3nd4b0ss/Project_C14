@@ -31,7 +31,10 @@ public partial class Erweiterung : Page
     private void NewProbeButton_Click(object sender, RoutedEventArgs e)
     {
         if (Data.GetProbeByName(NameOfProbeTextBox.Text).ProbeName == null)
+        {
             Data.Create(new Probe(NameOfProbeTextBox.Text));
+            EditProbeButton_Click(sender, e );
+        }
         else
         {
             MessageBox.Show("Es gibt bereits eine Probe mit diesem Namen!");
