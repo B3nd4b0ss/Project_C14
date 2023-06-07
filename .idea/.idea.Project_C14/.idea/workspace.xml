@@ -7,7 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="" />
+    <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themes/Dark.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Themes/Dark.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Themes/Light.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Themes/Light.xaml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -300,9 +305,9 @@
     <MESSAGE value="aaahhhh" />
     <MESSAGE value="h" />
     <MESSAGE value="oli" />
-    <MESSAGE value="a" />
     <MESSAGE value="V2 In Progress" />
-    <option name="LAST_COMMIT_MESSAGE" value="V2 In Progress" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>

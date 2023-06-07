@@ -7,7 +7,16 @@
       mc:Ignorable="d"
       Title="Erweiterung" Height="500" Width="1200">
     <Page.Resources>
-        <BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="1"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="2"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="3"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="4"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="5"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="6"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="7"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="8"></BooleanToVisibilityConverter>
+        <BooleanToVisibilityConverter x:Key="9"></BooleanToVisibilityConverter>
+
     </Page.Resources>
     <Grid>
         <Border Style="{DynamicResource MainBorder}" Margin="30 0">
@@ -35,8 +44,8 @@
                 <TextBlock Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#9ea4ad"
                                        Panel.ZIndex="1"
                                        IsHitTestVisible="False" Text="Name der Probe..." 
-                                       Visibility="{Binding ElementName=NameOfProbeTextBox, Path=Text.IsEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"/>
-                <TextBox Grid.ColumnSpan="2" x:Name="NameOfProbeTextBox" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource BerchnenText}"/>
+                                       Visibility="{Binding ElementName=NameOfProbeTextBox, Path=Text.IsEmpty, Converter={StaticResource 1}}"/>
+                <TextBox Grid.ColumnSpan="2" x:Name="NameOfProbeTextBox" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Style="{DynamicResource NameProbe}"/>
                 <Button x:Name="NewProbeButton" Grid.Column="2" Style="{DynamicResource CalculateButton}" Margin="5, 0, 0, 0" Click="NewProbeButton_Click">Neu</Button>
                 <Button x:Name="EditProbeButton" Grid.Column="3" Style="{DynamicResource CalculateButton}" Margin="5, 0, 0, 0" Click="EditProbeButton_Click">Bearbeiten</Button>
                 <!--#endregion-->
@@ -45,35 +54,76 @@
                 <!--#endregion-->
                 <!--#region Row 3-->
                 <Label Grid.Row="2" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="ProbeNameTextBox" Grid.Row="2" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="2" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=ProbeNameTextBox, Path=Text.IsEmpty, Converter={StaticResource 2}}"/>
+                    <TextBox x:Name="ProbeNameTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
+
                 <!--#endregion-->
                 <!--#region Row 4-->
                 <Label Grid.Row="3" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="AtmosphericC14InAtomsPerGramOfCarbonTextBox" Grid.Row="3" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="3" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=AtmosphericC14InAtomsPerGramOfCarbonTextBox, Path=Text.IsEmpty, Converter={StaticResource 3}}"/>
+                    <TextBox x:Name="AtmosphericC14InAtomsPerGramOfCarbonTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 5-->
                 <Label Grid.Row="4" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="SampleC14InAtomsPerGramOfCarbonTextBox" Grid.Row="4" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="4" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=SampleC14InAtomsPerGramOfCarbonTextBox, Path=Text.IsEmpty, Converter={StaticResource 4}}"/>
+                    <TextBox x:Name="SampleC14InAtomsPerGramOfCarbonTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 6-->
                 <Label Grid.Row="5" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="SampleCarbonInGramsTextBox" Grid.Row="5" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="5" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=SampleCarbonInGramsTextBox, Path=Text.IsEmpty, Converter={StaticResource 5}}"/>
+                    <TextBox x:Name="SampleCarbonInGramsTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 7-->
                 <Label Grid.Row="6" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="SampleHeightInMetersTextBox" Grid.Row="6" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="6" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=SampleHeightInMetersTextBox, Path=Text.IsEmpty, Converter={StaticResource 6}}"/>
+                    <TextBox x:Name="SampleHeightInMetersTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 8-->
                 <Label Grid.Row="7" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="GeomagneticFieldStrengthInMicroteslasTextBox" Grid.Row="7" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="7" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=GeomagneticFieldStrengthInMicroteslasTextBox, Path=Text.IsEmpty, Converter={StaticResource 7}}"/>
+                    <TextBox x:Name="GeomagneticFieldStrengthInMicroteslasTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 9-->
                 <Label Grid.Row="8" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="TemperatureInKelvinTextBox" Grid.Row="8" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="8" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=TemperatureInKelvinTextBox, Path=Text.IsEmpty, Converter={StaticResource 8}}"/>
+                    <TextBox x:Name="TemperatureInKelvinTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 10-->
                 <Label Grid.Row="9" Foreground="WhiteSmoke" Content="Probeding1"/>
-                <TextBox x:Name="PressureInPascalTextBox" Grid.Row="9" Grid.Column="1" Style="{DynamicResource EigenschaftTextBox}"/>
+                <Grid Grid.Row="9" Column="1">
+                    <TextBlock Margin="15 0 0 0" VerticalAlignment="Center" Foreground="WhiteSmoke" Panel.ZIndex="1"
+                               IsHitTestVisible="False" Text="..."
+                               Visibility="{Binding ElementName=PressureInPascalTextBox, Path=Text.IsEmpty, Converter={StaticResource 9}}"/>
+                    <TextBox x:Name="PressureInPascalTextBox" Style="{DynamicResource EigenschaftTextBox}"/>
+                </Grid>
                 <!--#endregion-->
                 <!--#region Row 11-->
                 <Button x:Name="SaveProbeButton" Grid.Row="10" Grid.Column="1" Grid.ColumnSpan="2" Content="Speichern" Margin="0, 2" Style="{DynamicResource CalculateButton}"/>
