@@ -8,4 +8,19 @@ public partial class AccountManageFace : Page
     {
         InitializeComponent();
     }
+
+    private void PullProbes_Click(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+    }
+
+    private void PushProbes_Click(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+    }
+
+    private void Logout_Click(object sender, System.Windows.RoutedEventArgs e)
+    {
+
+    }
 }
