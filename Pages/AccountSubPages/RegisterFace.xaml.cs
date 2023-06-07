@@ -12,7 +12,7 @@ public partial class RegisterFace : Page
 
     private void ForLogin_Click(object sender, System.Windows.RoutedEventArgs e)
     {
-
+        Account.SetLog();
     }
 
     private void Register_Click(object sender, System.Windows.RoutedEventArgs e)

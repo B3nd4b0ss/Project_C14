@@ -22,7 +22,7 @@ public class Calculate
     }
        
     // Calculations
-    public static void CalcProbe(Probe probeToCalc)
+    public static Probe CalcProbe(Probe probeToCalc)
     {
         double lambda = lambda0 + (deltaLambda / 1000) * probeToCalc.GeomagneticFieldStrengthInMicroteslas; // Decay constant adjusted for geomagnetic field
         double h = probeToCalc.SampleHeightInMeters / 1000; // Height above sea level in kilometers
@@ -36,5 +36,7 @@ public class Calculate
         double effectiveResult = correctedYears * pressureCorrection * temperatureCorrection;
 
         probeToCalc.EffectiveAge = effectiveResult;
+
+        return probeToCalc;
     }
 }

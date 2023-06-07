@@ -14,7 +14,7 @@ public partial class LoginFace : Page
 
     private void ForRegister_Click(object sender, RoutedEventArgs e)
     {
-
+        Account.SetReg();
     }
 
     private void Login_Click(object sender, RoutedEventArgs e)

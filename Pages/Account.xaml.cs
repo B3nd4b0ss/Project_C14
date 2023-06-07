@@ -33,4 +33,24 @@ public partial class Account : Page
     {
         _accounts[0].InitializePage();
     }
+
+    public static void SetReg()
+    {
+        _accounts[0].SetRegister();
+    }
+
+    public static void SetLog()
+    {
+        _accounts[0].SetLogin();
+    }
+
+    public void SetRegister()
+    {
+        AccountFrame.Content = new RegisterFace();
+    }
+
+    public void SetLogin()
+    {
+        AccountFrame.Content = new LoginFace();
+    }
 }
