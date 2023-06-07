@@ -12,11 +12,6 @@ public partial class LoginFace : Page
         InitializeComponent();
     }
 
-    private void ForLogin_Click(object sender, RoutedEventArgs e)
-    {
-        
-    }
-
     private void ForRegister_Click(object sender, RoutedEventArgs e)
     {
 
@@ -28,6 +23,8 @@ public partial class LoginFace : Page
         AccMngm.CurrentUser.Password = PasswordBox.Password;
 
         AccMngm.Login();
+
+        Account.UpdateFrame();
     }
 
     private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)

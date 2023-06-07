@@ -19,8 +19,7 @@
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <Button Style="{DynamicResource LoginButton}" Margin="15 35 1000 35" Content="Login" Click="ForLogin_Click"/>
-                <Button Style="{DynamicResource LoginButton}" Margin="115,35,900,35" Content="Register" Click="ForRegister_Click"/>
+                <Button Style="{DynamicResource LoginButton}" Margin="15 35 1000 35" Content="Register" Click="ForRegister_Click"/>
                 <Label Content="Login" Foreground="White" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center"></Label>
                     
                 <Grid Grid.Row="1" >

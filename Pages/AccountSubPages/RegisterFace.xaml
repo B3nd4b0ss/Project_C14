@@ -20,7 +20,6 @@
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
                 <Button Style="{DynamicResource LoginButton}" Margin="15 35 1000 35" Content="Login" Click="ForLogin_Click"/>
-                <Button Style="{DynamicResource LoginButton}" Margin="115,35,900,35" Content="Register" Click="ForRegister_Click"/>
                 <Label Content="Register" Foreground="White" HorizontalAlignment="Center" FontSize="35" VerticalAlignment="Center"></Label>
 
                     <Grid Grid.Row="1" >
@@ -34,7 +33,7 @@
                                IsHitTestVisible="False" Text="Passwort"/>
                         <PasswordBox x:Name="PasswordBox" Style="{DynamicResource AccountPasswordBox}" Margin="200 0" PasswordChanged="PasswordBox_PasswordChanged"/>
                     </Grid>
-                    <Button Grid.Row="3" Margin="450 25" Content="Login" Style="{DynamicResource LoginButton}" Click="Login_Click" ></Button>
+                    <Button Grid.Row="3" Margin="450 25" Content="Register" Style="{DynamicResource LoginButton}" Click="Register_Click" ></Button>
                 </Grid>
             </Border>
         </Grid>
