@@ -11,9 +11,18 @@ public class Calculate
     private const double lambda0 = 1.2093e-4; // Decay constant at sea level and zero geomagnetic field
     private const double deltaLambda = -0.00012; // Change in decay constant per unit change in geomagnetic field
     private const double R = 8.3144621; // Gas constant
+
+    public static Probe SimpleCalc(Probe probeToCalc)
+    {
+        double simpleAge = -Math.Log(probeToCalc.SampleC14 / probeToCalc.ReferencC14) * (5715 / Math.Log(2));
+        
+        probeToCalc.SimpleAge = simpleAge;
+
+        return probeToCalc;
+    }
        
     // Calculations
-    public static Probe CalcProbe(Probe probeToCalc)
+    public static void CalcProbe(Probe probeToCalc)
     {
         double lambda = lambda0 + (deltaLambda / 1000) * probeToCalc.GeomagneticFieldStrengthInMicroteslas; // Decay constant adjusted for geomagnetic field
         double h = probeToCalc.SampleHeightInMeters / 1000; // Height above sea level in kilometers
@@ -27,6 +36,5 @@ public class Calculate
         double effectiveResult = correctedYears * pressureCorrection * temperatureCorrection;
 
         probeToCalc.EffectiveAge = effectiveResult;
-        return probeToCalc;
     }
 }

@@ -8,16 +8,7 @@
       Title="Erweiterung" Height="500" Width="1200">
     <Grid>
         <Border Style="{DynamicResource MainBorder}" Margin="30 0">
-            <StackPanel>
-                <TextBlock x:Name="Text1"></TextBlock>
-                <TextBlock x:Name="Text2"></TextBlock>
-                <TextBlock x:Name="Text3"></TextBlock>
-                <TextBlock x:Name="Text4"></TextBlock>
-                <TextBlock x:Name="Text5"></TextBlock>
-                <TextBlock x:Name="Text6"></TextBlock>
-                <TextBlock x:Name="Text7"></TextBlock>
-                <Button x:Name="Berechnen" Style="{DynamicResource CalculateButton}" Content="Berechnen"></Button>
-            </StackPanel>
+            <Grid RowDefinitions="1*,1*,1*,1*,1*,1*,1*,1*,1*,1*,1*"></Grid>
         </Border>
     </Grid>
 </Page>
