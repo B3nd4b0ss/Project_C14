@@ -9,13 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Account.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Account.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Library.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Library.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -353,53 +347,25 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pages/Erweiterung.xaml.cs</url>
           <line>116</line>
-          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="116" containingFunctionPresentation="Method 'SaveProbeButton_Click'">
-            <startOffsets>
-              <option value="4011" />
-            </startOffsets>
-            <endOffsets>
-              <option value="4068" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="116" containingFunctionPresentation="Method 'SaveProbeButton_Click'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Code/Classes/Data.cs</url>
           <line>31</line>
-          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="31" containingFunctionPresentation="Method 'Edit'">
-            <startOffsets>
-              <option value="718" />
-            </startOffsets>
-            <endOffsets>
-              <option value="719" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="31" containingFunctionPresentation="Method 'Edit'" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Code/Classes/Data.cs</url>
           <line>28</line>
-          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="28" containingFunctionPresentation="Method 'Edit'">
-            <startOffsets>
-              <option value="653" />
-            </startOffsets>
-            <endOffsets>
-              <option value="654" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="28" containingFunctionPresentation="Method 'Edit'" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Pages/Erweiterung.xaml.cs</url>
           <line>98</line>
-          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="98" containingFunctionPresentation="Method 'SaveProbeButton_Click'">
-            <startOffsets>
-              <option value="3077" />
-            </startOffsets>
-            <endOffsets>
-              <option value="3095" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="98" containingFunctionPresentation="Method 'SaveProbeButton_Click'" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -52,7 +52,7 @@
                 <!--#endregion-->
                 <!--#region Row 2-->
                 <Label Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" Foreground="WhiteSmoke"
-                       Content="" />
+                       Content="Bitte geben Sie unten Ihre Messungsergebnisse ein. Bitte beachten Sie, dass für eine korrekte Berechnung möglichst alles ausfüllen da es sonst zu ungenauen oder sehr fehlerhaften Berechnungen kommen kann. Bitte geben Sie alle Werte OHNE Masseinheit ein." />
                 <!--#endregion-->
                 <!--#region Row 3-->
                 <Label Grid.Row="2" Foreground="WhiteSmoke" Content="Probe name" />
@@ -120,8 +120,10 @@
                 <!--#region Row 11-->
                 <Button x:Name="SaveProbeButton" Grid.Row="10" Grid.Column="1" Content="Speichern" Margin="0, 2"
                         Style="{DynamicResource CalculateButton}" Click="SaveProbeButton_Click" />
-                
-                <Button x:Name="ClearAllProbesButton" Grid.Row="10" Grid.Column="3" Content="Alle Proben löschen" Style="{DynamicResource CalculateButton}" Click="ClearAllProbesButton_OnClick"></Button>
+
+                <Button x:Name="ClearAllProbesButton" Grid.Row="10" Grid.Column="3" Content="Alle Proben löschen"
+                        Style="{DynamicResource CalculateButton}" Click="ClearAllProbesButton_OnClick">
+                </Button>
                 <!--#endregion-->
             </Grid>
         </Border>
