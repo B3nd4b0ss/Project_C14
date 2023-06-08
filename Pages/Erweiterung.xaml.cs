@@ -3,6 +3,7 @@ using Project_C14.Code.Classes;
 using Project_C14.Code.Structs;
 using System.Windows;
 using System.Windows.Controls;
+using static System.String;
 
 namespace Project_C14;
 
@@ -10,14 +11,15 @@ public partial class Erweiterung : Page
 {
     public Probe advancedProbe;
     public static bool LoadStringProbe;
-    public static string ProbeName;
-    
-    private static List<Erweiterung> _erweiterungPage = new List<Erweiterung>();
+    public static string ImportProbeName;
+    public static bool LastWasLoaded;
+
+    private static Erweiterung _erweiterungPage = new();
 
     public Erweiterung()
     {
         InitializeComponent();
-        _erweiterungPage.Add(this);
+        _erweiterungPage = this;
         EditSelectedProbe();
     }
 
@@ -30,43 +32,47 @@ public partial class Erweiterung : Page
         }
 
         var Probename = NameOfProbeTextBox.Text;
-        
+
         EditProbe(Probename);
     }
 
     private static void EditSelectedProbe()
     {
         if (!LoadStringProbe) return;
-        _erweiterungPage[0].EditProbe(ProbeName);
+        _erweiterungPage.EditProbe(ImportProbeName);
         LoadStringProbe = false;
     }
-    
+
     private void EditProbe(string Probename)
     {
         advancedProbe = Data.GetProbeByName(Probename);
 
         ProbeNameTextBox.Text = advancedProbe.ProbeName;
-        AtmosphericC14InAtomsPerGramOfCarbonTextBox.Text = advancedProbe.AtmosphericC14InAtomsPerGramOfCarbon.ToString();
+        AtmosphericC14InAtomsPerGramOfCarbonTextBox.Text =
+            advancedProbe.AtmosphericC14InAtomsPerGramOfCarbon.ToString();
         SampleC14InAtomsPerGramOfCarbonTextBox.Text = advancedProbe.SampleC14InAtomsPerGramOfCarbon.ToString();
         SampleCarbonInGramsTextBox.Text = advancedProbe.SampleCarbonInGrams.ToString();
         SampleHeightInMetersTextBox.Text = advancedProbe.SampleHeightInMeters.ToString();
-        GeomagneticFieldStrengthInMicroteslasTextBox.Text = advancedProbe.GeomagneticFieldStrengthInMicroteslas.ToString();
+        GeomagneticFieldStrengthInMicroteslasTextBox.Text =
+            advancedProbe.GeomagneticFieldStrengthInMicroteslas.ToString();
         TemperatureInKelvinTextBox.Text = advancedProbe.TemperatureInKelvin.ToString();
         PressureInPascalTextBox.Text = advancedProbe.PressureInPascal.ToString();
     }
 
     private void NewProbeButton_Click(object sender, RoutedEventArgs e)
     {
+        LastWasLoaded = false;
+
         if (NameOfProbeTextBox.Text == "")
         {
             MessageBox.Show("Probenname kann nicht Leer sein!");
             return;
         }
-        
+
         if (Data.GetProbeByName(NameOfProbeTextBox.Text).ProbeName == null)
         {
             Data.Create(new Probe(NameOfProbeTextBox.Text));
-            EditProbeButton_Click(sender, e );
+            EditProbeButton_Click(sender, e);
         }
         else
         {
@@ -82,29 +88,40 @@ public partial class Erweiterung : Page
 
     private void SaveProbeButton_Click(object sender, RoutedEventArgs e)
     {
+        var Probename = Empty;
+
         if (advancedProbe.ProbeName == null)
         {
             return;
         }
-        
-        var Probename = NameOfProbeTextBox.Text;
-        
+
+        Probename = NameOfProbeTextBox.Text;
+        if (LastWasLoaded)
+        {
+            Probename = ImportProbeName;
+            LastWasLoaded = false;
+        }
+
+
         advancedProbe.ProbeName = ProbeNameTextBox.Text;
-        advancedProbe.AtmosphericC14InAtomsPerGramOfCarbon = double.Parse(AtmosphericC14InAtomsPerGramOfCarbonTextBox.Text);
+        advancedProbe.AtmosphericC14InAtomsPerGramOfCarbon =
+            double.Parse(AtmosphericC14InAtomsPerGramOfCarbonTextBox.Text);
         advancedProbe.SampleC14InAtomsPerGramOfCarbon = double.Parse(SampleC14InAtomsPerGramOfCarbonTextBox.Text);
         advancedProbe.SampleCarbonInGrams = double.Parse(SampleCarbonInGramsTextBox.Text);
         advancedProbe.SampleHeightInMeters = double.Parse(SampleHeightInMetersTextBox.Text);
-        advancedProbe.GeomagneticFieldStrengthInMicroteslas = double.Parse(GeomagneticFieldStrengthInMicroteslasTextBox.Text);
+        advancedProbe.GeomagneticFieldStrengthInMicroteslas =
+            double.Parse(GeomagneticFieldStrengthInMicroteslasTextBox.Text);
         advancedProbe.TemperatureInKelvin = double.Parse(TemperatureInKelvinTextBox.Text);
         advancedProbe.PressureInPascal = double.Parse(PressureInPascalTextBox.Text);
 
         Data.Edit(Data.GetProbeByName(Probename), advancedProbe);
-        
+
         MessageBox.Show("Erfolgreich gespeichert!");
     }
 
     private void ClearAllProbesButton_OnClick(object sender, RoutedEventArgs e)
     {
+        LastWasLoaded = false;
         Data.ClearAllProbes(true);
     }
 }

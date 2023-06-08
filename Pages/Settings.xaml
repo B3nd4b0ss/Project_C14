@@ -6,12 +6,13 @@
       xmlns:local="clr-namespace:Project_C14"
       mc:Ignorable="d"
       Title="Settings" Height="500" Width="1200">
+    
     <Grid>
         <Border Style="{DynamicResource MainBorder}" Margin="30 0" >
             <Grid>
                 <Label Content="Darkmode" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0 0 200 0" FontSize="15" Foreground="White"></Label>
 
-                <ToggleButton x:Name="ThemeToggleButton" IsChecked="{Binding Darkmode}" Style="{DynamicResource IphoneToggleButton}" Click="ThemeToggleButton_Click"/>
+                <ToggleButton x:Name="ThemeToggleButton" IsChecked="{Binding Darkmode}" Height="50" Width="100" Style="{DynamicResource IphoneToggleButton}" Click="ThemeToggleButton_Click"/>
             </Grid>
         </Border>
     </Grid>

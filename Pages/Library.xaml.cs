@@ -27,8 +27,9 @@ public partial class Library : Page
     private void ProbeButtonOnClick(object sender, RoutedEventArgs e)
     {
         Button clickedButton = sender as Button;
-        Erweiterung.ProbeName = clickedButton.Content.ToString();
+        Erweiterung.ImportProbeName = clickedButton.Content.ToString();
         Erweiterung.LoadStringProbe = true;
+        Erweiterung.LastWasLoaded = true;
         MainWindow.UpdateTo("Erweiterung");
     }
 

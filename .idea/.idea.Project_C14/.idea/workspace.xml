@@ -9,17 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="dc23fc96-6f59-4714-bc5f-f02ff303e03a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Project_C14/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/AccMngm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Code/Classes/Data.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Code/Classes/Data.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainWindow.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MainWindow.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/AccountManageFace.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/LoginFace.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/AccountSubPages/RegisterFace.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Account.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Account.xaml.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Erweiterung.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pages/Library.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Library.xaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Pages/Library.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Library.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pages/Settings.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Pages/Settings.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_C14.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Project_C14.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +36,11 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/93a8f82184b4439ca5abff025375fe32564da0/0d/59783b31/CustomAttribute.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/93a8f82184b4439ca5abff025375fe32564da0/f6/42151e0e/Number.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/4b/6c884dc4/WpfXamlLoader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/b8/a5c81e94/ControlTemplate.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/ef/3f454a23/ResourceDictionary.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/6f/805d6605/XamlReader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/99d2abb3c7c64525bf69e988b8b69f1e604da0/7e/afea2706/Application.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/UserControls/InfoCard.xaml" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -118,7 +115,8 @@
       <workItem from="1685597243979" duration="3911000" />
       <workItem from="1686061223129" duration="4026000" />
       <workItem from="1686160448040" duration="6182000" />
-      <workItem from="1686169206919" duration="2154000" />
+      <workItem from="1686169206919" duration="2661000" />
+      <workItem from="1686173149882" duration="5112000" />
     </task>
     <task id="LOCAL-00001" summary="d">
       <created>1685531697459</created>
@@ -309,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686162962074</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="V7">
+      <created>1686171409923</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686171409923</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,23 +344,63 @@
     <MESSAGE value="V2 In Progress" />
     <MESSAGE value="a" />
     <MESSAGE value="Register works now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Register works now" />
+    <MESSAGE value="V7" />
+    <option name="LAST_COMMIT_MESSAGE" value="V7" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Pages/Library.xaml.cs</url>
-          <line>32</line>
-          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Library.xaml.cs" initialLine="32" containingFunctionPresentation="Method 'ProbeButtonOnClick'">
+          <url>file://$PROJECT_DIR$/Pages/Erweiterung.xaml.cs</url>
+          <line>116</line>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="116" containingFunctionPresentation="Method 'SaveProbeButton_Click'">
             <startOffsets>
-              <option value="930" />
+              <option value="4011" />
             </startOffsets>
             <endOffsets>
-              <option value="931" />
+              <option value="4068" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Code/Classes/Data.cs</url>
+          <line>31</line>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="31" containingFunctionPresentation="Method 'Edit'">
+            <startOffsets>
+              <option value="718" />
+            </startOffsets>
+            <endOffsets>
+              <option value="719" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Code/Classes/Data.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Code\Classes\Data.cs" initialLine="28" containingFunctionPresentation="Method 'Edit'">
+            <startOffsets>
+              <option value="653" />
+            </startOffsets>
+            <endOffsets>
+              <option value="654" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Pages/Erweiterung.xaml.cs</url>
+          <line>98</line>
+          <properties documentPath="C:\Users\Robin Jenni\RiderProjects\Project_C14\Pages\Erweiterung.xaml.cs" initialLine="98" containingFunctionPresentation="Method 'SaveProbeButton_Click'">
+            <startOffsets>
+              <option value="3077" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3095" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

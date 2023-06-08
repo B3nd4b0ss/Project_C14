@@ -10,6 +10,7 @@ public partial class Settings : Page
     
     public Settings()
     {
+        Darkmode = false;
         InitializeComponent();
     }
 

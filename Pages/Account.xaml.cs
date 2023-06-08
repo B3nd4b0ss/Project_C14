@@ -6,7 +6,7 @@ namespace Project_C14.Pages;
 
 public partial class Account : Page
 {
-    private static List<Account> _accounts = new List<Account>();
+    private static Account _account = new();
 
     public Account()
     {
@@ -14,7 +14,7 @@ public partial class Account : Page
 
         InitializePage();
 
-        _accounts.Add(this);
+        _account = this;
     }
 
     public void InitializePage()
@@ -31,17 +31,17 @@ public partial class Account : Page
 
     public static void UpdateFrame()
     {
-        _accounts[0].InitializePage();
+        _account.InitializePage();
     }
 
     public static void SetReg()
     {
-        _accounts[0].SetRegister();
+        _account.SetRegister();
     }
 
     public static void SetLog()
     {
-        _accounts[0].SetLogin();
+        _account.SetLogin();
     }
 
     public void SetRegister()
