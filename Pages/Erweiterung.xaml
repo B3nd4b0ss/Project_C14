@@ -52,7 +52,7 @@
                 <!--#endregion-->
                 <!--#region Row 2-->
                 <Label Grid.Row="1" Grid.ColumnSpan="4" HorizontalContentAlignment="Center" Foreground="WhiteSmoke"
-                       Content="Bitte geben Sie unten Ihre Messungsergebnisse ein. Bitte beachten Sie, dass für eine korrekte Berechnung möglichst alles ausfüllen da es sonst zu ungenauen oder sehr fehlerhaften Berechnungen kommen kann. Bitte geben Sie alle Werte OHNE Masseinheit ein." />
+                       Content="Bitte geben Sie unten Ihre Messungsergebnisse ein. Bitte beachten Sie, dass für eine korrekte Berechnung möglichst alles ausfüllen&#10;da es sonst zu ungenauen oder sehr fehlerhaften Berechnungen kommen kann. Bitte geben Sie alle Werte OHNE Masseinheit ein." />
                 <!--#endregion-->
                 <!--#region Row 3-->
                 <Label Grid.Row="2" Foreground="WhiteSmoke" Content="Probe name" />
